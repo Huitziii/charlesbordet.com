@@ -27,8 +27,8 @@ Ils me font confiance :
 ## Tableaux de bord - R Shiny
 
 <div class="text-center">
-	<img src="{{ "/assets/images/duraviz.png" | absolute_url }}" width="200px" style="margin: 30px">
-	<img src="{{ "/assets/images/mds.png" | absolute_url }}" width="200px" style="margin: 30px">
+	<img src="{{ "/assets/images/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px">
+	<img src="{{ "/assets/images/mds.png" | absolute_url }}" width="250px" style="margin: 30px">
 </div>
 
 R Shiny est un module de R permettant de créer des dashboards intuitifs et interactifs qui se mettent à jour automatiquement lors de l'ajout de nouvelles données.
@@ -60,8 +60,8 @@ Par exemple, une de mes missions a consisté à aider un site de rencontre à op
 ## Statistiques pour la Recherche
 
 <div class="text-center">
-	<img src="{{ "/assets/images/pella-tomlinson.png" | absolute_url }}" width="200px" style="margin: 30px">
-	<img src="{{ "/assets/images/MOMAB.png" | absolute_url }}" width="200px" style="margin: 30px">
+	<img src="{{ "/assets/images/pella-tomlinson.png" | absolute_url }}" width="250px" style="margin: 30px">
+	<img src="{{ "/assets/images/MOMAB.png" | absolute_url }}" width="250px" style="margin: 30px">
 </div>
 
 Mon background académique en statistique me permet d'aider les chercheurs lorsqu'ils ont besoin de réaliser des études statistiques et d'analyser leurs données.
@@ -77,8 +77,8 @@ Après un master de Statistique, j'ai approché le monde de la recherche en comm
 ## Formation en R et Statistiques
 
 <div class="text-center">
-	<img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="200px" style="margin: 30px">
-	<img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="200px" style="margin: 30px">
+	<img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px">
+	<img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px">
 </div>
 
 Afin de transmettre mon savoir, j'ai créé des cours en ligne regroupant plus de 2000 étudiants sur la plate-forme Udemy :
