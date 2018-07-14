@@ -1,0 +1,63 @@
+# Comment créer un shiny server avec AWS
+
+Introduction : J'explique la problématique où en tant que data scientist, je suis amené à créer un dashboard pour mon client. Ça peut être pour visualiser de la donnée ou pour directement interagir avec elle.
+
+Créer un dashboard en R Shiny, c'est facile pour moi parce que je maîtrise bien le langage R.
+
+Mais pour que mon client puisse utiliser l'application, il faut que je puisse la lui partager et la déployer sur sa machine.
+
+Une solution est d'installer R sur son ordinateur, puis de lui montrer comment lancer l'appli... non mais ça c'est juste impossible. Et imaginez s'il y a toute une équipe qui doit utiliser l'appli ?!
+
+La solution, c'est de déployer l'application sur un serveur auquel je donne accès à mon client. C'est le but de cet article dans lequel je vais vous expliquer comment créer un serveur sur AWS et le configurer afin d'y déployer une application Shiny.
+
+Les étapes sont :
+
+1. Créer une application shiny.
+
+Pour cette partie, je vais ré-utiliser une application déjà existante parmi la galerie sur le site de R Shiny. Je l'héberge sur mon Github de telle manière à ce qu'on puisse facilement la cloner sur le serveur.
+
+L'objectif de ce premier article sera surtout d'expliquer la problématique :
+
+* Pourquoi doit-on créer un serveur ?
+* Pourquoi utiliser AWS ? Quelles sont les alternatives ?
+* Quel sera le résultat final ?
+
+2. Créer un serveur sur AWS
+
+Cet article va expliquer en quoi "créer un serveur sur AWS" consiste, puis je donnerai des instructions étape par étape en expliquant chaque étape avec un screenshot et les explications des différentes options.
+
+À la fin, on va se connecter sur la machine avec PuttY, créer un utilisateur avec droits admin, et créer un moyen de se connecter facilement sans la clé.
+
+3. Installer R et R Shiny Server sur votre nouveau serveur.
+
+Dans cet article, on va :
+
+* Installer R.
+* Installer R Shiny.
+* Installer les packages nécessaires pour notre application
+* Vérifier que R Shiny fonctionne de base.
+
+4. Déployer l'application sur le serveur.
+
+Dans cet article, on va :
+
+* Cloner le repo sur le serveur.
+* Mettre en place un symlink pour que l'appli soit dans le shiny server.
+* Vérifier que l'appli fonctionne.
+* Je montre comment accéder aux logs.
+
+5. Extra : Créer un nom de domaine pour avoir une belle URL.
+
+Dans cet article, l'objectif est de ne plus aller sur une adresse IP avec un port 3838 mais de créer une adresse du type shiny.charlesbordet.com qui est bien plus sympathique.
+
+Il va falloir introduire nginx et configurer un proxy pour rediriger shiny.charlesbordet.com vers le port 3838 en local
+
+6. Extra : Sécuriser votre application en HTTPS.
+
+Dans cet article, on va discuter de comment rendre l'application plus sécurisée en utilisant le protocole HTTPS.
+
+Il va falloir notamment créer un certificat valide manuellement, puis grâce à CloudFlare on va pouvoir avoir le HTTPS facilement.
+
+7. Extra : Protéger votre application avec un mot de passe.
+
+Finalement, je ne sais pas trop comment faire cette étape, donc on apprendra en même temps.
