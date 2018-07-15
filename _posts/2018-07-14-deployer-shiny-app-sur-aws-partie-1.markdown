@@ -2,6 +2,8 @@
 layout: single
 title: "Comment déployer une application Shiny sur AWS - Partie 1"
 date: 2018-07-14
+header: 
+    image: /assets/images/shiny-server-aws-part1-featured.png
 ---
 
 Récemment, un de mes clients m'a demandé de lui créer une application en [R Shiny](https://shiny.rstudio.com/) qui permet aux utilisateurs finaux de visualiser tout un tas d'indicateurs et aussi d'interagir avec les données.
