@@ -4,6 +4,7 @@ permalink: /datascience-r/
 title: Udemy - Apprendre la Data Science avec R
 ---
 
+
 Sur cette page, vous trouverez tous les jeux de données et exercices du cours "Data Science avec R" sur Udemy.
 
 Bon courage !
