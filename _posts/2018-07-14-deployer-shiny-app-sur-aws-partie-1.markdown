@@ -6,6 +6,8 @@ header:
     image: /assets/images/shiny-server-aws-part1-featured.png
 ---
 
+{% include deployer-shiny-app-sur-aws-toc.markdown %}
+
 Récemment, un de mes clients m'a demandé de lui créer une application en [R Shiny](https://shiny.rstudio.com/) qui permet aux utilisateurs finaux de visualiser tout un tas d'indicateurs et aussi d'interagir avec les données.
 
 Plutôt la base pour une appli Shiny.
@@ -125,8 +127,10 @@ J'ai pris celle de l'explorateur de films :
 
 ![Movie Explorer]({{ "/assets/images/shiny-server-aws-part1-movie-explorer.png" | absolute_url }}){: .align-center}
 
-Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : https://github.com/Huitziii/movie-explorer
+Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 
 Cette fois-ci, on est prêts !
 
-Pour continuer vers l'étape suivante, cliquez ici : *Créer un serveur sur AWS*
+Pour continuer vers l'étape suivante, cliquez ici : 
+
+[Partie 2 - Créer un serveur sur AWS]({{ "/deployer-shiny-app-sur-aws-partie-2" | absolute_url }})
