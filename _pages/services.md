@@ -2,6 +2,7 @@
 layout: single
 permalink: /services/
 title: "Mes Services"
+author_profile: true
 ---
 
 Besoin d'un data scientist pour traiter vos données ?
