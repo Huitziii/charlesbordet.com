@@ -68,9 +68,9 @@ R Shiny est particulièrement adapté pour une utilisation en interne afin de su
 
 Afin de transmettre mon savoir, je crée des cours en ligne regroupant plus de 2000 étudiants :
 
-* [Apprendre la Data Science avec R](https://www.udemy.com/datascience-r/)
-* [Le Deep Learning de A à Z](https://www.udemy.com/le-deep-learning-de-a-a-z/)
-* [L'Intelligence Artificielle de A à Z](https://www.udemy.com/intelligence-artificielle-az/)
+* [Apprendre la Data Science avec R](https://www.udemy.com/datascience-r/?couponCode=WEBSITE)
+* [Le Deep Learning de A à Z](https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE)
+* [L'Intelligence Artificielle de A à Z](https://www.udemy.com/intelligence-artificielle-az/?couponCode=WEBSITE)
 
 Et j'anime régulièrement des formations professionnelles autour de la statistique ou du langage R. J'ai notamment animé les formations suivantes :
 
