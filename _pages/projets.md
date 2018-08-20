@@ -3,7 +3,6 @@ layout: single
 permalink: /projets/
 title: "Mes Projets"
 toc: true
-author_profile: true
 ---
 
 ## Projets clients
