@@ -2,7 +2,7 @@ Cet article fait partie de la série **Comment déployer une application Shiny s
 
 * [Partie 1 : Créer une application Shiny.]({{ "/deployer-shiny-app-sur-aws-partie-1" | absolute_url }})
 * [Partie 2 : Créer un serveur sur AWS.]({{ "/deployer-shiny-app-sur-aws-partie-2" | absolute_url }})
-* Partie 3 : Installer R et R Shiny sur votre nouveau serveur.
+* [Partie 3 : Installer R et R Shiny sur votre nouveau serveur.]({{ "/deployer-shiny-app-sur-aws-partie-3" | absolute_url }})
 * Partie 4 : Déployer l'application sur le serveur.
 * Partie 5 : Extra : Créer un nom de domaine pour avoir une belle URL.
 * Partie 6 : Extra : Sécuriser votre application en HTTPS.

@@ -118,9 +118,9 @@ Pas cool.
 
 Du coup, vous allez créer une clé d'accès sous la forme d'un fichier que vous allez garder sur votre ordinateur. À chaque fois que vous voudrez vous connectez sur votre instance, il faudra spécifier ce fichier et hop vous aurez accès !
 
-Important : Ne perdez pas ce fichier. Sinon, vous risquez de vous voir refuser l'accès à votre propre serveur et vous devrez tout recommencer ! Mais rassurez-vous, dans le prochain chapitre, on verra comment mettre en place un système de mot de passe à retenir pour se simplifier la vie.
+Important : Ne perdez pas ce fichier. Sinon, vous risquez de vous voir refuser l'accès à votre propre serveur et vous devrez tout recommencer ! 
 
-En attendant, choisissez un nom pour votre clé, et téléchargez-la. 
+Choisissez un nom pour votre clé, et téléchargez-la.
 
 ## Félicitations, vous avez créé votre premier serveur !
 
