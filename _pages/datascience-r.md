@@ -1,6 +1,8 @@
 ---
 layout: single
 permalink: /datascience-r/
+lang: fr
+ref: datascience-r
 title: Udemy - Apprendre la Data Science avec R
 ---
 

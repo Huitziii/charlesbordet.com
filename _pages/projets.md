@@ -3,6 +3,8 @@ layout: single
 permalink: /projets/
 title: "Mes Projets"
 toc: true
+lang: fr
+ref: projects
 author_profile: true
 ---
 

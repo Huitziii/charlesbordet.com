@@ -2,6 +2,8 @@
 layout: single
 title: "Comment déployer une application Shiny sur AWS - Partie 2"
 date: 2018-07-31
+lang: fr
+ref: shiny-server-aws-part2
 header:
     image: /assets/images/shiny-server-aws-part2-featured.png
 ---

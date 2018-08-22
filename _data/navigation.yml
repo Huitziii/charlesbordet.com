@@ -1,9 +1,13 @@
 main:
   - title: "Blog"
     url: /
+    lang: fr
   - title: "Services"
     url: /services/
+    lang: fr
   - title: "Projets"
     url: /projets/
+    lang: fr
   - title: "Contact"
     url: /contact/
+    lang: fr

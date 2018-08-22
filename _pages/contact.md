@@ -2,6 +2,8 @@
 layout: single
 permalink: /contact/
 title: "Contact"
+lang: fr
+ref: contact
 author_profile: true
 ---
 

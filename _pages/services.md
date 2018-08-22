@@ -2,6 +2,8 @@
 layout: single
 permalink: /services/
 title: "Mes Services"
+lang: fr
+ref: services
 author_profile: true
 ---
 

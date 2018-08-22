@@ -268,7 +268,7 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      related: false
 
 #srcset, sizes and dynamic media related
 image_url: /images
