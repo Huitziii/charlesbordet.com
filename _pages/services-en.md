@@ -49,32 +49,34 @@ Then, I kept developing new skills to first master **R** and then **Python**, wh
 	<a href="{{ "/assets/images/mds.png" | absolute_url }}"><img src="{{ "/assets/images/mds.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
-La mise en place de modèles statistiques et mesures de KPIs nécessite une surveillance continue de ces indicateurs et de la bonne marche des modèles. C'est pourquoi mes clients ont un besoin important dans la mise en place de tableaux de bord de tous types.
+Setting up statistical models and KPIs tracking lead to a continuous monitoring of the indicators and of the model predictions. That's why my clients usually need to set up all kinds of dashboards.
 
-À l'aide de R Shiny, je crée des dashboards intuitifs et interactifs qui se mettent à jour automatiquement lors de l'ajout de nouvelles données. Ils permettent :
+With R Shiny, I create easy-to-use and interactive dashboards that update the charts and tables automatically as soon as new data is detected. We can:
 
-* de créer des tableaux interactifs (à l'instar d'Excel).
-* de visualiser des données à l'aide de graphes interactifs.
-* d'extraire les données choisies sous forme de rapports PDF ou tableaux Excel.
+* create interactive tables (similar to Excel)
+* visualize data with customized charts
+* extract PDF reports or Excel working files.
 
-Une grande force du dashboard R Shiny est qu'il est complètement personnalisable à votre besoin, facile à maintenir, et surtout complètement automatisable. Il va automatiquement aller chercher les nouvelles données et mettre à jour les indicateurs. En utilisant le langage R, il permet une manipulation rapide et fluide des données, même si celles-ci contiennent des millions de lignes.
+A huge strength of using R Shiny compared to dashboard-in-a-box services is the ability to completely customized it to your needs. They're also easy to maintain and completely automatic. They fetch the data in a database on a regular basis or by the click of a button and update all the KPIs, charts, etc.
 
-R Shiny est particulièrement adapté pour une utilisation en interne afin de suivre des KPIs au jour le jour, interagir directement avec les données, ou visualiser les résultats de modèles de prédiction.
+Since they use R as a backend, the data is cleaned and prepared with powerful code that can handle millions of data points in a few seconds.
 
-## Formation en R et Statistiques
+R Shiny is particularly convenient for internal use in a team, to track daily KPIs, interact with the data, or visualize prediction models.
+
+## Professional training in R and Statistics
 
 <div class="text-center">
 	<a href="https://www.udemy.com/le-deep-learning-de-a-a-z/" target="_blank"><img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 	<a href="https://www.udemy.com/datascience-r/" target="_blank"><img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
-Afin de transmettre mon savoir, je crée des cours en ligne regroupant plus de 2000 étudiants :
+I like to teach so I create online courses. So far, I have been able to gather more than 2000 students with these courses (in French):
 
 * [Apprendre la Data Science avec R](https://www.udemy.com/datascience-r/?couponCode=WEBSITE)
 * [Le Deep Learning de A à Z](https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE)
 * [L'Intelligence Artificielle de A à Z](https://www.udemy.com/intelligence-artificielle-az/?couponCode=WEBSITE)
 
-Et j'anime régulièrement des formations professionnelles autour de la statistique ou du langage R. J'ai notamment animé les formations suivantes :
+I occasionally conduct professional trainings in Statistics or R. Here are a few examples (in French):
 
 * [Les fondamentaux des statistiques appliquées](https://www.ib-formation.fr/catalogue/nbs-details/catref/universib-formations-informatiques-informatique-decisionnelle-les-fondamentaux/ref/bi090/les-fondamentaux-des-statistiques-appliquees)
 * [Les fondamentaux de l'analyse statistique avec R](https://www.ib-formation.fr/catalogue/nbs-details/catref/universib-formations-informatiques-informatique-decisionnelle-les-fondamentaux/ref/bi103/les-fondamentaux-de-lanalyse-statistique-avec-r)
