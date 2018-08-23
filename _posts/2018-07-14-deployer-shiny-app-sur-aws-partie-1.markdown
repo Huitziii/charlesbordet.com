@@ -5,7 +5,7 @@ date: 2018-07-14
 lang: fr
 ref: shiny-server-aws-part1
 header: 
-    image: /assets/images/shiny-server-aws-part1-featured.png
+    image: "https://s3.eu-central-1.amazonaws.com/charlesbordet/shiny-server-aws-part1-featured.png"
 ---
 
 {% include deployer-shiny-app-sur-aws-toc.markdown %}
