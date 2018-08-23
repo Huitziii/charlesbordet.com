@@ -4,7 +4,7 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[page.lang].recent_posts | default: "Recent Posts" }}</h3>
 
-{% assign posts=paginator.posts | where:"lang", page.lang %}
+{% assign posts=site.posts | where:"lang", page.lang %}
 
 {% for post in posts %}
   {% include archive-single.html %}

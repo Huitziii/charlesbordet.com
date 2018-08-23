@@ -102,7 +102,9 @@ analytics:
 author:
   name             : "Charles Bordet"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data scientist indépendant. <br />R | Statistique | Data Science."
+  bio:
+    en             : "Freelance data scientist. <br />R | Statistics | Data Science."
+    fr             : "Data scientist indépendant. <br />R | Statistique | Data Science."
   location         : "Lyon, France"
   email            : "charles@datachamp.fr"
   uri              :

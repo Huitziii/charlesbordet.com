@@ -2,12 +2,27 @@ main:
   - title: "Blog"
     url: /
     lang: fr
+  - title: "Blog"
+    url: /en/
+    lang: en
+
   - title: "Services"
     url: /services/
     lang: fr
+  - title: "Services"
+    url: /en/services/
+    lang: en
+
   - title: "Projets"
     url: /projets/
     lang: fr
+  - title: "Projects"
+    url: /en/projects/
+    lang: en
+
   - title: "Contact"
     url: /contact/
     lang: fr
+  - title: "Contact"
+    url: /en/contact/
+    lang: en

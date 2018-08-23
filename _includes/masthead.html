@@ -2,7 +2,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        {% if page.lang == 'en' %}
+          <a class="site-title" href="{{ page.lang | relative_url }}">{{ site.title }}</a>
+        {% else %}
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        {% endif %}
         <ul class="visible-links">
           {% assign links=site.data.navigation.main | where:"lang", page.lang %}
           {% for link in links %}
@@ -15,22 +19,19 @@
               <a href="{{ domain }}{{ link.url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {% endfor %}
-        </ul>
-        <ul class="visible-links">
           {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
           {% for post in posts %}
           <li>
-            <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+            <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
           </li>
           {% endfor %}
 
           {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
           {% for page in pages %}
           <li>
-            <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+            <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
           </li>
           {% endfor %}
-        </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
