@@ -21,7 +21,7 @@
           {% endfor %}
           {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
           {% for post in posts %}
-          <li>
+          <li class="masthead__menu-item">
             <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
           </li>
           {% endfor %}

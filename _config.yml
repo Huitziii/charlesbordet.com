@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Charles Bordet"
-  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio:
     en             : "Freelance data scientist. <br />R | Statistics | Data Science."
     fr             : "Data scientist indépendant. <br />R | Statistique | Data Science."

@@ -26,23 +26,23 @@ I have worked with:
 	<img src="{{ "/assets/images/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
 </div>
 
-## Analyses statistiques de données
+## Statistical Analysis and Machine Learning
 
-J'aide mes clients à extraire de la valeur de leurs données sous diverses formes. Par exemple :
+I help my clients extract value from their data. For example:
 
-**Prédiction de <span class="tooltip">LCV<span class="tooltiptext">Lifetime Customer Value</span></span>** ou comment prédire le taux de conversion et durée d'inscription d'un nouvel utilisateur pour un produit SaaS.
+**<span class="tooltip">LCV<span class="tooltiptext">Lifetime Customer Value</span></span>**: How to predict the conversion rate and subscriptiong duration of a new user for a SaaS product.
 
-**Analyse du comportement** de patients souffrant du Vitiligo afin de mieux comprendre les facteurs impactant la sévérité de la maladie.
+**Behavioral analysis** of patients suffering from Vitiligo (a skin disease) in order to better understand the factors impacting the severity of the disease.
 
-**Études d'incidentologie** afin de prendre rapidement des actions selon le coût prédit et la gravité des incidents.
+**Incidentology studies**: Goal is to quickly assess the gravity and cost of product issues to quickly take actions.
 
-Voir mes [Projets]({{ "/projets" | absolute_url }}) pour plus d'exemples.
+Visit the [Projects]({{ "/en/projects" | absolute_url }}) for more.
 
-Issu d'une formation en statistique à l'Université de Strasbourg, j'ai consolidé mes connaissances théoriques en démarrant en doctorat en statistique. 
+Coming from a background in mathematics and statistics, I have later completed my theoretical knowledge by starting a PhD in statistics.
 
-Par la suite, j'ai continué à développer mes compétences afin de maîtriser **R** puis **Python**, puis en apprenant le **Machine Learning** et le **Deep Learning**, sujets sur lesquels je crée à présent des formations et écrit régulièrement dans mon blog.
+Then, I kept developing new skills to first master **R** and then **Python**, while diving into **Machine Learning** and **Deep Learning** which are topics I have created courses for and consistently write about in my blog.
 
-## Reporting et dashboards
+## Building automatic reports & Dashboards
 
 <div class="text-center">
 	<a href="{{ "/assets/images/duraviz.png" | absolute_url }}"><img src="{{ "/assets/images/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
