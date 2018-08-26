@@ -8,6 +8,21 @@
           <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         {% endif %}
         <ul class="visible-links">
+
+          {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+          {% for post in posts %}
+          <li class="masthead__menu-item">
+            <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
+          </li>
+          {% endfor %}
+
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
+          <li class="masthead__menu-item">
+            <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
+          </li>
+          {% endfor %}
+          
           {% assign links=site.data.navigation.main | where:"lang", page.lang %}
           {% for link in links %}
             {% if link.url contains 'http' %}
@@ -19,19 +34,7 @@
               <a href="{{ domain }}{{ link.url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {% endfor %}
-          {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-          {% for post in posts %}
-          <li class="masthead__menu-item">
-            <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
-          </li>
-          {% endfor %}
-
-          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-          {% for page in pages %}
-          <li>
-            <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
-          </li>
-          {% endfor %}
+        </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
