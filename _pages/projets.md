@@ -30,17 +30,17 @@ Le modèle permettait de prédire le taux de conversion (utilisateur gratuit -> 
 
 J'ai fait plusieurs jobs de web scraping, consistant à extraire des données issues d'un site web. Le challenge relevant parfois à contourner des protections mises en place, à extraire des données générées dynamiquement, ou à paralléliser les tâches lorsque la quantité de données est conséquente.
 
-![Feedback - Cargo Media]({{ "/assets/images/projets-feedback-etsy.png" | absolute_url }}){: .align-center}
+![Feedback - Web Scraping]({{ "/assets/images/projets-feedback-etsy.png" | absolute_url }}){: .align-center}
 
 #### Études incidentologiques et automatisation de rapports/dashboards (2015 - 2017)
 
 Durant mon passage en prestation chez Renault, j'ai eu l'occasion d'affiner mes compétences pour :
 
-- Automatiser des tâches répétitives à l'aide de scripts R
-- Créer des rapports automatiques en R Shiny
-- Faire des études incidentologiques
+* Automatiser des tâches répétitives à l'aide de scripts R
+* Créer des rapports automatiques en R Shiny
+* Faire des études incidentologiques
 
-![Feedback - Cargo Media]({{ "/assets/images/projets-feedback-renault.png" | absolute_url }}){: .align-center}
+![Feedback - Renault]({{ "/assets/images/projets-feedback-renault.png" | absolute_url }}){: .align-center}
 
 ## Projets académiques
 
@@ -75,6 +75,6 @@ Durant mon passage en prestation chez Renault, j'ai eu l'occasion d'affiner mes 
 
 #### Applications web (2018)
 
-[Succotash](http://shiny.charlesbordet.com/succotash) est une application de gestion de recettes de cuisine.
+[Succotash](https://github.com/Huitziii/succotash) est une application de gestion de recettes de cuisine.
 
 N'ayant jamais vraiment réussi à trouver la bonne application qui correspondait à mon besoin pour enregistrer des recettes de cuisine et trouver des idées quand j'en manque, j'ai décidé de créer ma propre application, 
