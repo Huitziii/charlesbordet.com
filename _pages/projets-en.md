@@ -8,7 +8,7 @@ ref: projects
 author_profile: true
 ---
 
-## Clients' projects
+## Client projects
 
 #### R Shiny Developer for the Boston Consulting Group (2018)
 
