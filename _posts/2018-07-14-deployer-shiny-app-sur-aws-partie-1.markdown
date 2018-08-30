@@ -131,7 +131,7 @@ J'ai pris celle de l'explorateur de films :
 
 Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 
-Notez que vous aurez besoin de git et d'une console pour suivre ce tutoriel. Vous pouvez télécharger git à l'adresse suivante : [https://git-scm.com/downloads]("https://git-scm.com/downloads"G)
+Notez que vous aurez besoin de git et d'une console pour suivre ce tutoriel. Vous pouvez télécharger git à l'adresse suivante : [https://git-scm.com/downloads]("https://git-scm.com/downloads")
 
 Cette fois-ci, on est prêts !
 
