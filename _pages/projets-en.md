@@ -10,7 +10,7 @@ author_profile: true
 
 ## Client projects
 
-Here are presented the most important client projects I have worked in.
+Here are presented the most important client projects I have worked on.
 
 #### R Shiny Developer for the Boston Consulting Group (2018)
 

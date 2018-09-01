@@ -10,6 +10,8 @@ author_profile: true
 
 ## Projets clients
 
+Les projets les importants sur lesquels j'ai travaillé :
+
 #### R Shiny Developer pour le Boston Consulting Group (2018)
 
 Mon rôle a été de créer et maintenir une application R Shiny pour un client du BCG en retail leur permettant de consulter et modifier les prix pour les soldes.
