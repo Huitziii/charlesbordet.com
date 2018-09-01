@@ -10,6 +10,8 @@ author_profile: true
 
 ## Client projects
 
+Here are presented the most important client projects I have worked in.
+
 #### R Shiny Developer for the Boston Consulting Group (2018)
 
 My role has been to create and maintain an R Shiny app for BCG's client, a clothing retailer, allowing them to consult and improve sales prices.
@@ -17,6 +19,13 @@ My role has been to create and maintain an R Shiny app for BCG's client, a cloth
 Price predictions were made from a machine learning model and fed into the dashboard, so that the merchandisers could extract and use these optimal prices.
 
 Since the combination of AI and human expertise allow for even better results, the app was made in order to interact with the predictions, make simulations with new prices, and directly integrate these modifications in their internal systems.
+
+#### Text mining studies in Political Sciences (2018)
+
+I am working closely with [Daniel Finke](http://pure.au.dk/portal/en/persons/id%2835814d4e-3b95-4fcf-9672-9ea94c9dadb7%29.html), from the Department of Political Science of the Aarhus University, in Denmark, and helped at multiple occasions to:
+
+* extract text data from the internet (such as resolution drafts from the UN, proposals to the European Commission, etc.)
+* analyze the data with text-mining algorithms (clustering, topic modelling, similarity scores, etc.)
 
 #### Statistical model for the expected lifetime value (2016 - 2017)
 
@@ -26,7 +35,7 @@ The model predicted the conversion rate (from free to paid user) and the duratio
 
 ![Feedback - Cargo Media]({{ "/assets/images/projets-feedback-cargo-media.png" | absolute_url }}){: .align-center}
 
-#### Web scraping of etsy.com (2017)
+#### Web scraping of etsy.com (2017) (and others)
 
 I did multiple web scraping jobs, whose goal is to extract data from a website. The challenges are to work around scraping protections, extract dynamically-generated data, or parallelize tasks when the quantity of data to extract is huge.
 
@@ -43,6 +52,12 @@ I worked at Renault where I developed new skills to:
 ![Feedback - Renault]({{ "/assets/images/projets-feedback-renault.png" | absolute_url }}){: .align-center}
 
 ## Academic Projects
+
+#### Statistical studies in Dermatology (2018)
+
+I have worked closely with [EMMA](http://emma.clinic/) and participated in studies targeting patient care for patients suffering from skin disease, such as Vitiligo, Acne, or Eczema. 
+
+Publications have been submitted.
 
 #### Talks (2015)
 

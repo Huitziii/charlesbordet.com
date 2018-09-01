@@ -18,6 +18,13 @@ Des prédictions issues d'un modèle de machine learning alimentent le tableau d
 
 Parce qu'une combinaison de l'IA et de la connaissance métier permet des résultats encore meilleurs, l'appli permet aux gérants d'interagir avec l'application, de simuler les résultats avec d'autres prix, et de directement intégrer ces modifications dans leurs systèmes internes.
 
+#### Études de text mining en Sciences Politiques (2018)
+
+Je travaille régulièrement avec [Daniel Finke](http://pure.au.dk/portal/en/persons/id%2835814d4e-3b95-4fcf-9672-9ea94c9dadb7%29.html), chercheur en sciences politiques à l'université de Aarhus au Danemark. Je l'aide à :
+
+* extraire des données textuelles d'Internet (comme des projets de résolution à l'ONE, ou des propositions à la Commission Européenne, etc.)
+* analyser ces données à l'aide d'algorithmes de text-mining (clustering, topic modelling, similarity scores, etc.)
+
 #### Statistical model for the expected lifetime value (2016 - 2017)
 
 J'ai créé un modèle de machine learning permettant de prédire la valeur d'un nouvel utilisateur sur un site de rencontre.
@@ -43,6 +50,12 @@ Durant mon passage en prestation chez Renault, j'ai eu l'occasion d'affiner mes 
 ![Feedback - Renault]({{ "/assets/images/projets-feedback-renault.png" | absolute_url }}){: .align-center}
 
 ## Projets académiques
+
+#### Statistical studies in Dermatology (2018)
+
+Je travaille régulièrement avec le laboratoire [EMMA](http://emma.clinic/) où je réalise des analyses de données au sein d'études dont le but est d'améliorer la prise en charge des patients souffrant de maladies de peau, telles que le Vitiligo, l'acné, ou l'eczéma.
+
+Des publications ont été soumises.
 
 #### Présentations (2015)
 
