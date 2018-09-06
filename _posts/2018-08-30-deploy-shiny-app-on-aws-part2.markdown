@@ -112,7 +112,7 @@ We won't modify anything in the next screen, so directly click on *Next: Add Sto
 
 ## Step 3: Choose the storage size
 
-![Choose the storage size]({{ "/assets/images/shiny-server-aws-part2-ebs-en	.png" | absolute_url }}){: .align-center}
+![Choose the storage size]({{ "/assets/images/shiny-server-aws-part2-ebs-en.png" | absolute_url }}){: .align-center}
 
 By default, AWS gives you 8 GB of space
 
