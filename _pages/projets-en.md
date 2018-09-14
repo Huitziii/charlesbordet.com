@@ -12,7 +12,7 @@ author_profile: true
 
 Here are presented the most important client projects I have worked on.
 
-#### R Shiny Developer for the Boston Consulting Group (2018)
+### R Shiny Developer for the Boston Consulting Group (2018)
 
 My role has been to create and maintain an R Shiny app for BCG's client, a clothing retailer, allowing them to consult and improve sales prices.
 
@@ -20,14 +20,18 @@ Price predictions were made from a machine learning model and fed into the dashb
 
 Since the combination of AI and human expertise allow for even better results, the app was made in order to interact with the predictions, make simulations with new prices, and directly integrate these modifications in their internal systems.
 
-#### Text mining studies in Political Sciences (2018)
+*R, Shiny, HTML/CSS, Azure, Bitbucket, JIRA*
+
+### Text mining studies in Political Sciences (2018)
 
 I am working closely with [Daniel Finke](http://pure.au.dk/portal/en/persons/id%2835814d4e-3b95-4fcf-9672-9ea94c9dadb7%29.html), from the Department of Political Science of the Aarhus University, in Denmark, and helped at multiple occasions to:
 
 * extract text data from the internet (such as resolution drafts from the UN, proposals to the European Commission, etc.)
 * analyze the data with text-mining algorithms (clustering, topic modelling, similarity scores, etc.)
 
-#### Statistical model for the expected lifetime value (2016 - 2017)
+*R (tidyverse, rvest, httuv, multiprocessing), AWS (EC2, S3), text-mining (LDA, semantic similarity)*
+
+### Statistical model for the expected lifetime value (2016 - 2017)
 
 I created a machine learning model to predict the value of new users on a dating website.
 
@@ -35,13 +39,17 @@ The model predicted the conversion rate (from free to paid user) and the duratio
 
 ![Feedback - Cargo Media]({{ "/assets/images/projets-feedback-cargo-media.png" | absolute_url }}){: .align-center}
 
-#### Web scraping of etsy.com (2017) (and others)
+*Machine Learning/Statistics (logistic regression, elastic net, survival analysis)*, R (data.table, survival, Shiny), AWS (EC2, Redshift), SQL*
+
+### Web scraping of etsy.com (2017) (and others)
 
 I did multiple web scraping jobs, whose goal is to extract data from a website. The challenges are to work around scraping protections, extract dynamically-generated data, or parallelize tasks when the quantity of data to extract is huge.
 
 ![Feedback - Web Scraping]({{ "/assets/images/projets-feedback-etsy.png" | absolute_url }}){: .align-center}
 
-#### Incidentology studies and automatisation of reports/dashboards (2015 - 2017)
+*R (tidyverse, rvest)*
+
+### Incidentology studies and automatisation of reports/dashboards (2015 - 2017)
 
 I worked at Renault where I developed new skills to:
 
@@ -51,19 +59,23 @@ I worked at Renault where I developed new skills to:
 
 ![Feedback - Renault]({{ "/assets/images/projets-feedback-renault.png" | absolute_url }}){: .align-center}
 
+*R (Shiny, tcltk), Survival analysis*
+
 ## Academic Projects
 
-#### Statistical studies in Dermatology (2018)
+### Statistical studies in Dermatology (2018)
 
 I have worked closely with [EMMA](http://emma.clinic/) and participated in studies targeting patient care for patients suffering from skin disease, such as Vitiligo, Acne, or Eczema. 
 
 Publications have been submitted.
 
-#### Talks (2015)
+*R, Multivariate regression, ANOVA, PCA*
+
+### Talks (2015)
 
 [A Stochastic Pella Tomlinson Model and its Maximum Sustainable Yield](https://ssc.ca/sites/default/files/meetings/ssc2015_program_full.compressed.pdf) - <span class="tooltip">SSC<span class="tooltiptext">Statistical Society of Canada</span></span> 2015
 
-#### Scientific papers (2014)
+### Scientific papers (2014)
 
 <div class="text-center">
 	<img src="{{ "/assets/images/pella-tomlinson.png" | absolute_url }}" width="250px" style="margin: 30px">
@@ -76,7 +88,7 @@ Publications have been submitted.
 
 ## Personal projects
 
-#### Online courses (2017 - 2018)
+### Online courses (2017 - 2018)
 
 <div class="text-center">
 	<img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px">
@@ -87,8 +99,10 @@ Publications have been submitted.
 * [Le Deep Learning de A à Z](https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE) - 4.4/5 (2000 étudiants)
 * [L'Intelligence Artificielle de A à Z](https://www.udemy.com/intelligence-artificielle-az/?couponCode=WEBSITE) 
 
-#### Web applications (2018)
+*Python, Machine Learning, Deep Learning*
 
-[Succotash](https://github.com/Huitziii/succotash) is a recipe manager app.
+### Web applications (2018)
 
-Not being able to find a good app to save my recipes, I decided to create my own.
+[Udemy](https://shiny.charlesbordet.com/udemy) is a visualization dashboard to analyze my revenues from Udemy.
+
+Being rather disappointed by the tools provided by the platform, I decided to create my own dashboard.
