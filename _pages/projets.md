@@ -39,7 +39,7 @@ Le modèle permettait de prédire le taux de conversion (utilisateur gratuit -> 
 
 ![Feedback - Cargo Media]({{ "/assets/images/projets-feedback-cargo-media.png" | absolute_url }}){: .align-center}
 
-*Machine Learning/Statistics (logistic regression, elastic net, survival analysis)*, R (data.table, survival, Shiny), AWS (EC2, Redshift), SQL*
+*Machine Learning/Statistics (logistic regression, elastic net, survival analysis), R (data.table, survival, Shiny), AWS (EC2, Redshift), SQL*
 
 ### Web scraping of etsy.com (2017)
 
