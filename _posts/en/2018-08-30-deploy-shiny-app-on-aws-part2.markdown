@@ -8,7 +8,7 @@ header:
     image: /assets/images/shiny-server-aws-part2-featured.png
 ---
 
-{% include deploy-shiny-app-on-aws-toc.markdown %}
+{% include shiny-server-aws-en.markdown %}
 
 We stopped last time at the creation of the Shiny app. Just as a reminder, you can find it on Github: [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 

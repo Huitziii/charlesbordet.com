@@ -8,7 +8,7 @@ header:
     image: /assets/images/shiny-server-aws-part3-featured.png
 ---
 
-{% include deploy-shiny-app-on-aws-toc.markdown %}
+{% include shiny-server-aws-en.markdown %}
 
 Last time, we stopped right after the creation of your first server on AWS.
 

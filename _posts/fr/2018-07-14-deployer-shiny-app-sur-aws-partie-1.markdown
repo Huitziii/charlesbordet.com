@@ -8,7 +8,7 @@ header:
     image: /assets/images/shiny-server-aws-part1-featured.png
 ---
 
-{% include deployer-shiny-app-sur-aws-toc.markdown %}
+{% include shiny-server-aws-fr.markdown %}
 
 Récemment, un de mes clients m'a demandé de lui créer une application en [R Shiny](https://shiny.rstudio.com/) qui permet aux utilisateurs finaux de visualiser tout un tas d'indicateurs et aussi d'interagir avec les données.
 
