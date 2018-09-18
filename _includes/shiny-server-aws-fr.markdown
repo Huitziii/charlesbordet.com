@@ -7,3 +7,5 @@ Cet article fait partie de la série **Comment déployer une application Shiny s
 * Partie 5 : Extra : Créer un nom de domaine pour avoir une belle URL.
 * Partie 6 : Extra : Sécuriser votre application en HTTPS.
 * Partie 7 : Extra : Protéger votre application avec un mot de passe.
+
+---
