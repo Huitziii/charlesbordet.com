@@ -19,5 +19,12 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
-  </div>
+  {% if page.lang == 'fr' %}
+  <h3>Les fondations de R</h3>
+  <p><a href="https://www.udemy.com/datascience-r/?couponCode=WEBSITECB" target="_blank"><img src="/assets/images/r-udemy.png" style="width: 200px;" alt="Cours R sur Udemy" /></a><br/>
+  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-half-alt checked"></span> 4.5
+  </p>
+  <p>Apprenez R sur des données réelles.</p>
+  {% endif %}
+</div>
 {% endif %}

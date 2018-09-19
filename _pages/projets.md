@@ -95,7 +95,7 @@ Des publications ont été soumises.
 	<img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px">
 </div>
 
-* [Apprendre la Data Science avec R](https://www.udemy.com/datascience-r/?couponCode=WEBSITE) - 4.6/5 (1000 étudiants)
+* [Apprendre la Data Science avec R](https://www.udemy.com/datascience-r/?couponCode=WEBSITECB) - 4.6/5 (1000 étudiants)
 * [Le Deep Learning de A à Z](https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE) - 4.4/5 (2000 étudiants)
 * [L'Intelligence Artificielle de A à Z](https://www.udemy.com/intelligence-artificielle-az/?couponCode=WEBSITE) 
 
