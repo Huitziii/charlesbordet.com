@@ -134,11 +134,11 @@ Et tous, c'est tous. Sans exception.
 
 *Qui ici sait faire une ACP ?*
 
-[CROQUIS MAINS LEVÉES]
+![Lever les mains]({{ "/assets/images/linear-algebra-part1-hands-up.png" | absolute_url}}){: .align-center}
 
 *Qui ici comprend la théorie derrière l'ACP et est capable de l'expliquer ?*
 
-[CROQUIS MAINS LEVÉES]
+![Baisse les mains]({{ "/assets/images/linear-algebra-part1-hands-down.png" | absolute_url}}){: .align-center}
 
 Ok.
 

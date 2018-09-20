@@ -136,11 +136,11 @@ All of them without exception.
 
 *Who knows PCA here?*
 
-[CROQUIS MAINS LEVÉES]
+![Lever les mains]({{ "/assets/images/linear-algebra-part1-hands-up.png" | absolute_url}}){: .align-center}
 
 *Who knows PCA theory and can explain it to me?*
 
-[CROQUIS MAINS LEVÉES]
+![Baisse les mains]({{ "/assets/images/linear-algebra-part1-hands-down.png" | absolute_url}}){: .align-center}
 
 Yea..
 
