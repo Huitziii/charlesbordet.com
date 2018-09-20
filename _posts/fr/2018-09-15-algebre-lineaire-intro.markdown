@@ -140,7 +140,7 @@ Et tous, c'est tous. Sans exception.
 
 ![Baisse les mains]({{ "/assets/images/linear-algebra-part1-hands-down.png" | absolute_url}}){: .align-center}
 
-Ok.
+Ok. (*On se calme dans le fond !*)
 
 Maintenant, on se comprend.
 
