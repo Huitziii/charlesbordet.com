@@ -329,7 +329,7 @@ We can do a hell lot of things!
 
 If that got you excited you want to know more... well.. just keep reading to the next article:
 
-[Part 1: The three definitions of a vector]({{ "/linear-algebra-vectors" | absolute_url}})
+Part 1: The three definitions of a vector*(à venir)*
 
 
 
