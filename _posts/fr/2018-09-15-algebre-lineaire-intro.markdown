@@ -332,7 +332,7 @@ On peut déjà faire pas mal de choses !
 
 Si vous avez l'eau à la bouche et êtes assoiffé d'en savoir plus.. alors n'hésitez plus et jetez-vous sur le premier chapitre :
 
-[Partie 1 : Les trois définitions d'un vecteur]({{ "/algebre-lineaire-vecteurs" | absolute_url}})
+Partie 1 : Les trois définitions d'un vecteur *(à venir)*
 
 
 
