@@ -1,5 +1,6 @@
 ---
 layout: single
+permalink: /en/deploy-shiny-app-on-aws-part2
 title: "How to deploy a Shiny app on AWS - Part 2"
 date: 2018-08-30
 lang: en

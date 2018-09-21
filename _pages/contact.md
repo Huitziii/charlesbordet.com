@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /contact/
+permalink: /fr/contact/
 title: "Contact"
 lang: fr
 ref: contact
