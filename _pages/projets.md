@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /fr/projets/
+permalink: /projets/
 title: "Mes Projets"
 toc: true
 lang: fr

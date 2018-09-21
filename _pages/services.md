@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /fr/services/
+permalink: /services/
 title: "Mes Services"
 lang: fr
 ref: services
@@ -11,7 +11,7 @@ Besoin d'un data scientist pour traiter vos données ?
 
 Mes clients font appel à moi pour les services suivants :
 
-* [Analyses statistiques & Machine Learning](#analyses-statistiques-de-données-machine-learning)
+* [Analyses statistiques de données](#analyses-statistiques-de-données)
 * [Reporting et dashboards](#reporting-et-dashboards)
 * [Formation en R et Statistiques](#formation-en-r-et-statistiques)
 
@@ -26,52 +26,17 @@ Ils me font confiance :
 	<img src="{{ "/assets/images/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
 </div>
 
-# Analyses statistiques & Machine Learning
+## Analyses statistiques de données
 
-Je mets en place des algorithmes prédictifs de Machine Learning ou crée des modèles statistiques permettant d'expliquer vos données.
+J'aide mes clients à extraire de la valeur de leurs données sous diverses formes. Par exemple :
 
-Par exemple :
+**Prédiction de <span class="tooltip">LCV<span class="tooltiptext">Lifetime Customer Value</span></span>** ou comment prédire le taux de conversion et durée d'inscription d'un nouvel utilisateur pour un produit SaaS.
 
-## Prédiction de <span class="tooltip">LCV<span class="tooltiptext">Lifetime Customer Value</span></span>
+**Analyse du comportement** de patients souffrant du Vitiligo afin de mieux comprendre les facteurs impactant la sévérité de la maladie.
 
-Vous disposez d'un produit <span class="tooltip">SaaS<span class="tooltiptext">Software as a Service</span></span> où des utilisateurs paient de manière récurrente et vous vous posez des questions telles que :
+**Études d'incidentologie** afin de prendre rapidement des actions selon le coût prédit et la gravité des incidents.
 
-* Quel est le taux de rétention et comment l'améliorer ?
-* Comment vos clients utilisent-ils le produit ?
-* Comment prédire qu'un client risque de terminer son abonnement ?
-
-Je peux vous aider à répondre à ces questions, et bien d'autres.
-
-Étude de cas : Comment prédire la CLV d'un produit SaaS ? <- ÉCRIRE ARTICLE ET AJOUTER LIEN
-{: style="color: red;"}
-
-## Études statistiques en recherche
-
-Vous êtes chercheur et spécialiste dans votre domaine, vous avez quelques connaissances en statistique, mais vous avez besoin d'un statisticien professionnel pour vous épauler.
-
-J'aide mes clients à produire et rédiger leurs analyses statistiques, dans des domaines variées tels que la médecine ou les sciences politiques.
-
-J'adapte les techniques utilisées à votre besoin, mais voici une liste non exhaustive de ce que j'ai été amené à utiliser :
-
-* Régressions, ANOVA
-* ACP
-* Algorithmes de classification sémantique (topic modelling)
-
-Étude de cas : Comment faire du topic modelling sur des articles ? <- ÉCRIRE ARTICLE ET AJOUTER LIEN
-{: style="color: red;"}
-
-## Ma formation
-
-Issu d'un Master en statistique à l'Université de Strasbourg, j'ai une composante très forte en mathématiques et statistique qui m'a permis de démarrer un doctorat en statistique.
-
-Par la suite, j'ai développé mes compétences en apprenant à coder et à utiliser des outils indispensables à la data science :
-
-* Le **langage R**, le tidyverse pour manipuler les données, ggplot2 pour les visualiser, Rmarkdown pour communiquer les résultats, et Shiny pour créer une appli data.
-* Le **langage Python**, bien que moins proficient que R, je maîtrise les modules numpy, pandas pour manipuler les données, matplotlib et seaborn pour les visualiser, et mes analyses en machine learning sont produits à l'aide de scikit-learn, tensorflow, et keras.
-* Le **langage SQL**
-
-Ubuntu, Git/Github/Bitbucket, AWS (EC2/S3/Redshift), Jenkins.
-
+Voir mes [Projets]({{ "/projets" | absolute_url }}) pour plus d'exemples.
 
 Issu d'une formation en statistique à l'Université de Strasbourg, j'ai consolidé mes connaissances théoriques en démarrant en doctorat en statistique. 
 
