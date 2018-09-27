@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /en/how-to-predict-ltv-saas-startup
+permalink: /en/how-to-predict-ltv-saas-startup/
 title: "SaaS startup: How to predict LTV for new users?"
 date: 2018-09-27
 lang: en
