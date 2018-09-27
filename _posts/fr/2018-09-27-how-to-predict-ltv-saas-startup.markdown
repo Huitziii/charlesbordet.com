@@ -30,7 +30,7 @@ It's a type of business that's been exploding in the past few years. Think of.
 * Web hosts.
 * ...
 
-There are just so many.
+There are so many.
 
 But the questions are the same.
 
@@ -40,7 +40,7 @@ That's LTV, for LifeTime Value. Or CLV, for Customer Lifetime Value.
 
 It's the value of the user.
 
-Depending on a number of factors, like the product used, the demographics of the user, his behavior, etc. we predict how much time he'll stay and how much money he'll spend.
+Depending on many  factors, like the product used, the demographics of the user, his behavior, etc. we predict how much time he'll stay and how much money he'll spend.
 
 **What is the churn rate?**
 
@@ -58,7 +58,7 @@ If you realize a certain segment spend way less money and cancel after a month..
 
 ![Acme Corporation]({{ "/assets/images/crash-course-ltv-acme.png" | absolute_url }}){: .align-center}
 
-**In this article, we will try to answer these questions for a SaaS Startup that has 3 years of data on its customers.**
+**In this article, we will answer these questions for a SaaS Startup that has 3 years of data on its customers.**
 
 ## Presentation of the SaaS Startup
 
@@ -72,7 +72,7 @@ I already cleaned the data, so that in the final dataset, I have:
 
 **100,000 transactions**. More exactly: 96,528 transactions, among 41,971 customers.
 
-**One product**. SaaS startups usually have multiple products. We keep things simple and focus only on one. There is no free version, so no conversion rate to predict.
+**One product**. SaaS startups usually have many products. We keep things simple and focus only on one. There is no free version, so no conversion rate to predict.
 
 **Three predictive variables**:
 
@@ -170,7 +170,7 @@ To do so, let's first aggregate the dataset on the customer level:
 
 Our first approach will be biased, but this is the most intuitive one.
 
-The idea, simply, is to compute the average of the `time` variable:
+The idea is to compute the average of the `time` variable:
 
 {% highlight R %}
 > mean(data_agg$time)
@@ -263,9 +263,9 @@ with:
 
 If the math is too heavy for you, don't worry. The goal of this article is not to derive the equations. 
 
-I'm just showing it here because that looks super serious. But really, we have functions in R that does the computation automatically.
+I'm showing it here because that looks super serious. But we have functions in R that does the computation for us.
 
-The HUGE benefit of this estimator is that it takes into account that the non-churned subscribers will potentially stay a longer time.
+The HUGE benefit of this estimator is that it takes into account that the non-churned subscribers will stay a longer time.
 
 Plus, it's the maximum likelihood estimator, meaning it has good properties. Especially, it is asymptotically non-biased.
 
@@ -314,7 +314,7 @@ It can actually be explained easily:
 
 A new user will subscribe only for one month, and if he is satisfied, he will now pay for 3, 6, or 12 months (since it's cheaper than paying on a monthly basis).
 
-So, obviously, canceling happens at 1, 4, 7, or 13 months.
+So canceling happens at 1, 4, 7, or 13 months.
 
 It could be a good practice to take a particular care to a customer who approaches these numbers of months.
 
