@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /fr/comment-predire-ltv-pour-startup-saas
+permalink: /fr/comment-predire-ltv-pour-startup-saas/
 title: "Startup SaaS : Comment prédire la LTV d'un nouvel utilisateur ?"
 date: 2018-09-21
 lang: fr
