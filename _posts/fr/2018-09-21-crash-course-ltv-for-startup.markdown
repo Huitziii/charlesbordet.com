@@ -4,7 +4,7 @@ permalink: /fr/comment-predire-ltv-pour-startup-saas/
 title: "Startup SaaS : Comment prédire la LTV d'un nouvel utilisateur ?"
 date: 2018-09-21
 lang: fr
-ref: crash-course-ltv
+ref: crash-course-ltv-1
 header:
     image: /assets/images/crash-course-ltv-featured.jpg
 ---
@@ -22,9 +22,9 @@ Un produit SaaS, pour *Service as a Software*, c'est une application web pour la
 Les exemples sont nombreux et c'est un type de business qui explose depuis plusieurs années sur internet :
 
 * Dropbox, ou Google Drive. Vous payez chaque mois pour stocker des données dans le cloud.
-* Todoist, Evernote, Trello, Focus@Will, RescueTime, ... Ces services qui permettent d'améliorer sa productivité et son organisation proposent généralement une version gratuite et une version plus évoluée payante.
+* Todoist, Evernote, Trello, Focus@Will, RescueTime, ... Ces services qui permettent d'améliorer sa productivité proposent généralement une version gratuite et une version plus évoluée payante.
 * Les ESP (Email Service Provider), comme Mailchimp, ConvertKit, Drip, et consorts. Vous payez un abonnement pour avoir une liste d'emails et envoyer facilement des newsletters.
-* Les sites de rencontre, où un accès gratuit limité permet de découvrir le produit, puis vous payez chaque mois pour avoir un accès complet.
+* Les sites de rencontres, où un accès gratuit limité permet de découvrir le produit, puis vous payez chaque mois pour avoir un accès complet.
 * Les hébergeurs web
 * ...
 
@@ -70,11 +70,11 @@ Après nettoyage des données, voici ce dont nous disposons :
 
 **100 000 transactions**. Plus exactement : 96 528 transactions, parmi 41 971 clients. 
 
-**Un produit unique**. Généralement, on propose plusieurs produits, avec des valeurs différentes. Là, on va se simplifier la vie et se focaliser sur un produit. Il n'existe pas de version gratuite, donc pas de taux de conversion à prédire.
+**Un produit unique**. Généralement, on propose plusieurs produits, avec des prix et caractéristiques différents. Là, on va se simplifier la vie et se focaliser sur un produit. Il n'existe pas de version gratuite, donc pas de taux de conversion à prédire.
 
 **Trois variables prédictives** : 
 
-* *Le channel d'acquisition*, c'est-à-dire est que le client est venu de manière organique de Google, ou bien via des publicités payantes ? 
+* *Le channel d'acquisition*, cest-ce que le client est venu de manière organique de Google, ou bien via des publicités payantes ? 
 * *L'appareil utilisé* : Le *user agent* d'un internaute contient généralement pas mal d'informations, notamment si le visiteur utilise un ordinateur ou un mobile.
 * *Le segment* : À l'inscription, l'utilisateur choisit s'il va utiliser le produit en perso ou pour un usage professionnel.
 
@@ -125,7 +125,7 @@ Explication des variables :
 
 Notez qu'on est dans un cas très simpliste. On ne dispose ici que de quelques variables prédictives. Dans la vie réelle, on dispose en général de beaucoup plus de données, comme par exemple :
 
-* Davantage de données sur les clients : L'âge, la localisation, la classe sociale, et toute sorte d'informations qu'il aura rempli lors de son inscription.
+* Davantage de données sur les clients : L'âge, la localisation, la classe sociale, et toutes sortes d'informations qu'il aura rempli lors de son inscription.
 * Les interactions entre les clients et le support : On peut potentiellement stocker tous les échanges (écrits ou oraux), leur nombre et fréquence, les classifier pour savoir si les problèmes ont été résolus ou non, si le client râle beaucoup, etc.
 * Le comportement du client avec le produit : La fréquence et durée d'utilisation, son évolution dans le temps, etc.
 
@@ -183,7 +183,7 @@ Sauf que...
 
 Comme je le mentionnais juste avant, cette approche est **biaisée**.
 
-En effet, dans notre jeu de données, on a à la fois des clients qui ont déjà résiliés, mais aussi d'autres dont l'abonnement est toujours en cours !
+En effet, dans notre jeu de données, on a à la fois des clients qui ont déjà résilié, mais aussi d'autres dont l'abonnement est toujours en cours !
 
 Ça veut dire que dans notre estimation, on sous-estime la durée d'abonnement de tous les clients qui n'ont pas encore résilié !
 
@@ -193,7 +193,9 @@ Alors, que faire ?
 
 ### L'approche que c'est une mauvaise idée
 
-Une seconde approche pourrait être de ne considérer que les personnes ayant déjà résilié leur abonnement. Comme ça, plus de sous-estimation !
+Une seconde approche pourrait être de ne considérer que les personnes ayant déjà résilié leur abonnement. 
+
+Comme ça, plus de sous-estimation !
 
 Sauf que...
 
@@ -208,7 +210,7 @@ Et puis :
 
 ![Rétention mauvaise idée]({{ "assets/images/crash-course-ltv-retention_bad_idea.png" | absolute_url}}){: .align-center}
 
-Maintenant, plus que 50% des abonnés résilient après 1 mois, et on arrive à 9% de rétention après 12 mois.
+Maintenant, plus de 50% des abonnés résilient après 1 mois, et on arrive à 9% de rétention après 12 mois.
 
 C'est bizarre..
 
@@ -238,7 +240,7 @@ $$\hat{S}(t) = \prod_{i: t_i \leq t}\left(1 - \frac{d_i}{n_i}\right)$$
 
 avec :
 
-* $$S(t)$$ est la *fonction de survie*. Dans notre contexte, on l'appellerait plutôt la fonction de rétention, c'est exactement ce qu'on essaie d'estimer depuis tout à l'heure et qu'on a tracé à deux reprises plus haut.)=∏i:ti≤t(1
+* $$S(t)$$ est la *fonction de survie*. Dans notre contexte, on l'appellerait plutôt la fonction de rétention, c'est exactement ce qu'on essaie d'estimer depuis tout à l'heure et qu'on a tracé à deux reprises plus haut.
 * $$\prod$$ est le symbole du produit (la multiplication). Pour une valeur de temps $$t$$, on multiplie l'expression entre parenthèses pour chaque donnée $$i$$ où $$t_i$$ est inférieur à $$t$$.
 * $$d_i$$ est le nombre de résiliations au temps $$t_i$$.
 * $$n_i$$ est le nombre d'abonnés restants au temps $$t_i$$.

@@ -109,7 +109,7 @@ fr: &DEFAULT_FR
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
-  minute_read                : "minute de lecture"
+  minute_read                : "minutes de lecture"
   share_on_label             : "Partager sur"
   meta_label                 :
   tags_label                 : "Tags :"
