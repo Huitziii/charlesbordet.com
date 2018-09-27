@@ -7,21 +7,21 @@ main:
     lang: en
 
   - title: "Services"
-    url: /services/
+    url: /fr/services/
     lang: fr
   - title: "Services"
     url: /en/services/
     lang: en
 
   - title: "Projets"
-    url: /projets/
+    url: /fr/projets/
     lang: fr
   - title: "Projects"
     url: /en/projects/
     lang: en
 
   - title: "Contact"
-    url: /contact/
+    url: /fr/contact/
     lang: fr
   - title: "Contact"
     url: /en/contact/
