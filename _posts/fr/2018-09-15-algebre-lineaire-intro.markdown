@@ -1,5 +1,6 @@
 ---
 layout: single
+permalink: /fr/linear-algebra/
 title: "L'algèbre linéaire pour la Data Science : Pourquoi ?"
 date: 2018-09-15
 lang: fr
