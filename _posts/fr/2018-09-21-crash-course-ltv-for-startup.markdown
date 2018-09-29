@@ -6,7 +6,7 @@ date: 2018-09-21
 lang: fr
 ref: crash-course-ltv-1
 header:
-    image: /assets/images/crash-course-ltv-featured.jpg
+    image: /assets/images/crash-course-ltv-1/featured.jpg
 ---
 
 Lorsque vous travaillez dans une start-up qui détient un produit SaaS, les mêmes problématiques reviennent sans arrêt :
@@ -54,7 +54,7 @@ Une fois la LTV connue, on s'intéresse à segmenter notre base de clients afin 
 
 Si on se rend compte qu'une partie de la clientèle rapporte beaucoup moins et tend à se désabonner après 1 mois, on peut faire des économies en arrêtant de les cibler.
 
-![Acme Corporation]({{ "/assets/images/crash-course-ltv-acme.png" | absolute_url }}){: .align-center}
+![Acme Corporation]({{ "/assets/images/crash-course-ltv-1/acme.png" | absolute_url }}){: .align-center}
 
 **Dans cet article, nous allons essayer de répondre à ces questions pour une start-up SaaS qui dispose de 3 années de données sur ses clients.**
 
@@ -175,7 +175,7 @@ En effet, ce qu'on aimerait faire, c'est simplement calculer la moyenne de la va
 
 Voire même on pourrait tracer une courbe de la proportion de personnes étant toujours inscrites après 1, 2, 3, … mois :
 
-![Rétention biaisée]({{ "assets/images/crash-course-ltv-retention_biased.png" | absolute_url}}){: .align-center}
+![Rétention biaisée]({{ "assets/images/crash-course-ltv-1/retention_biased.png" | absolute_url}}){: .align-center}
 
 On apprend notamment sur ce graphe que quasiment 50% des abonnés résilient après 1 mois. Et seulement 14% des abonnés restent 12 mois et plus.
 
@@ -208,7 +208,7 @@ On obtient une valeur encore plus faible pour la moyenne !
 
 Et puis :
 
-![Rétention mauvaise idée]({{ "assets/images/crash-course-ltv-retention_bad_idea.png" | absolute_url}}){: .align-center}
+![Rétention mauvaise idée]({{ "assets/images/crash-course-ltv-1/retention_bad_idea.png" | absolute_url}}){: .align-center}
 
 Maintenant, plus de 50% des abonnés résilient après 1 mois, et on arrive à 9% de rétention après 12 mois.
 
@@ -253,7 +253,7 @@ Il s'agit en fait de l'estimateur du max de vraisemblance, ce qui garantit qu'il
 
 Comparons à présent nos 3 estimateurs :
 
-![Rétention globale]({{ "/assets/images/crash-course-ltv-retention_global.png" | absolute_url}}){: .align-center}
+![Rétention globale]({{ "/assets/images/crash-course-ltv-1/retention_global.png" | absolute_url}}){: .align-center}
 
 On observe à présent qu'effectivement, les deux estimateurs précédemment étudiés sous-estiment largement la rétention !
 

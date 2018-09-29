@@ -6,10 +6,10 @@ date: 2018-09-01
 lang: en
 ref: shiny-server-aws-part3
 header:
-    image: /assets/images/shiny-server-aws-part3-featured.png
+    image: /assets/images/shiny-server-aws-part3/featured.jpg
 ---
 
-{% include shiny-server-aws-en.markdown %}
+{% include tableofcontents/shiny-server-aws-en.markdown %}
 
 Last time, we stopped right after the creation of your first server on AWS.
 
@@ -22,7 +22,7 @@ In this new article, we'll learn:
 
 Once your *instance* is created, AWS will display a **Connect** button. If you click on it, you'll get something like that:
 
-![Bouton Connect]({{ "/assets/images/shiny-server-aws-part3-connect.png" | absolute_url }}){: .align-center}
+![Bouton Connect]({{ "/assets/images/shiny-server-aws-part3/connect.jpg" | absolute_url }}){: .align-center}
 
 These are the instructions to connect to your server.
 
@@ -36,7 +36,7 @@ The most common one is PuTTY, which you can download on [https://www.putty.org/]
 
 Next, you'll have to transform the key you downloaded in the previous article. Remember, the file with the *pem* extension.
 
-![PuTTYgen]({{ "/assets/images/shiny-server-aws-part3-puttygen.png" | absolute_url }}){: .align-center}
+![PuTTYgen]({{ "/assets/images/shiny-server-aws-part3/puttygen.jpg" | absolute_url }}){: .align-center}
 
 1. Run PuTTYgen (type "PuTTYgen" in the start menu)
 2. Choose RSA.
@@ -45,7 +45,7 @@ Next, you'll have to transform the key you downloaded in the previous article. R
 
 Then, run PuTTY and configure it with what AWS told you:
 
-![PuTTY config]({{ "/assets/images/shiny-server-aws-part3-putty-config-en.png" | absolute_url }}){: .align-center}
+![PuTTY config]({{ "/assets/images/shiny-server-aws-part3/putty-config-en.jpg" | absolute_url }}){: .align-center}
 
 1. In Host Name (or IP address), copy/past the value you'll find at the 4th step of the above screenshot (for me, it's *ec2-52-59-238-223.eu-central-1.compute.amazonaws.com*).
 2. Port: 22
@@ -58,7 +58,7 @@ That's it.
 
 You're in!
 
-![PuTTY console]({{ "/assets/images/shiny-server-aws-part3-putty-console.png" | absolute_url }}){: .align-center}
+![PuTTY console]({{ "/assets/images/shiny-server-aws-part3/putty-console.jpg" | absolute_url }}){: .align-center}
 
 **For Ubuntu and Mac users**
 
@@ -150,4 +150,4 @@ You don't know it yet, but you already have a Shiny app running on your server n
 
 That's what we'll see in the next part...
 
-[Part 4 - Deploy the app on the server]({{ "/deploy-shiny-app-on-aws-part-4" | absolute_url }})
+[Part 4 - Deploy the app on the server]({{ "/en/shiny-aws-4" | absolute_url }})

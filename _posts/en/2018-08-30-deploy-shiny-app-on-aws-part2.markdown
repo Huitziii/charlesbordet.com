@@ -6,10 +6,10 @@ date: 2018-08-30
 lang: en
 ref: shiny-server-aws-part2
 header:
-    image: /assets/images/shiny-server-aws-part2-featured.png
+    image: /assets/images/shiny-server-aws-part2/featured.jpg
 ---
 
-{% include shiny-server-aws-en.markdown %}
+{% include tableofcontents/shiny-server-aws-en.markdown %}
 
 We stopped last time at the creation of the Shiny app. Just as a reminder, you can find it on Github: [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 
@@ -33,11 +33,11 @@ I'm using AWS to host my website at the cost of $10/month. Plus, I can also host
 
 Once your account is created, log in and you'll land on a page with all the available services:
 
-![Services AWS]({{ "/assets/images/shiny-server-aws-part2-aws-services.png" | absolute_url }}){: .align-center}
+![Services AWS]({{ "/assets/images/shiny-server-aws-part2/aws-services.jpg" | absolute_url }}){: .align-center}
 
 In the search box, type *EC2*.
 
-![Kesako]({{ "/assets/images/shiny-server-aws-part2-kesako.png" | absolute_url }}){: .align-right}
+![Kesako]({{ "/assets/images/shiny-server-aws-part2/kesako.jpg" | absolute_url }}){: .align-right}
 
 EC2 means Elastic Compute Cloud.
 
@@ -77,7 +77,7 @@ And then, click on *Launch Instance*.
 
 ## Step 1: Choose your AMI
 
-![Choose your AMI]({{ "/assets/images/shiny-server-aws-part2-ami.png" | absolute_url }}){: .align-center}
+![Choose your AMI]({{ "/assets/images/shiny-server-aws-part2/ami.jpg" | absolute_url }}){: .align-center}
 
 An AMI, for *Amazon Machine Image*, is a sort of pre-packaged server with plenty of things ready-to-use inside.
 
@@ -93,7 +93,7 @@ Click on Select.
 
 ## Step 2: Choose your instance type
 
-![Choose your instance type]({{ "/assets/images/shiny-server-aws-part2-instances.png" | absolute_url }}){: .align-center}
+![Choose your instance type]({{ "/assets/images/shiny-server-aws-part2/instances.jpg" | absolute_url }}){: .align-center}
 
 The instance type corresponds to the power of your machine.
 
@@ -113,7 +113,7 @@ We won't modify anything in the next screen, so directly click on *Next: Add Sto
 
 ## Step 3: Choose the storage size
 
-![Choose the storage size]({{ "/assets/images/shiny-server-aws-part2-ebs-en.png" | absolute_url }}){: .align-center}
+![Choose the storage size]({{ "/assets/images/shiny-server-aws-part2/ebs-en.jpg" | absolute_url }}){: .align-center}
 
 By default, AWS gives you 8 GB of space
 
@@ -131,7 +131,7 @@ A final screen will summarize all the options you picked. Give it a look and val
 
 ## Step 4: Create a key pair
 
-![Create a key pair]({{ "/assets/images/shiny-server-aws-part2-keypairs.png" | absolute_url }}){: .align-center}
+![Create a key pair]({{ "/assets/images/shiny-server-aws-part2/keypairs.jpg" | absolute_url }}){: .align-center}
 
 Oh well... Yet another screen. What's this thing with keys?
 
@@ -153,10 +153,10 @@ Pick a name for you key, and download it.
 
 After a few seconds, your instance will be ready and you'll see it in the Instances menu.
 
-![New instance]({{ "/assets/images/shiny-server-aws-part2-newinstance-en.png" | absolute_url }}){: .align-center}
+![New instance]({{ "/assets/images/shiny-server-aws-part2/newinstance-en.jpg" | absolute_url }}){: .align-center}
 
 In the next chapter, we'll see how to connect to your server with SSH and we'll install R and R Shiny on it!
 
 Keep reading:
 
-[Part 3 - Install R and R Shiny on your new server]({{ "/deploy-shiny-app-on-aws-part-3" | absolute_url }})
+[Part 3 - Install R and R Shiny on your new server]({{ "/en/shiny-aws-3" | absolute_url }})

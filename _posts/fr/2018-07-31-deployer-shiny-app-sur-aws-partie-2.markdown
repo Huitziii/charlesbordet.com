@@ -6,10 +6,10 @@ date: 2018-07-31
 lang: fr
 ref: shiny-server-aws-part2
 header:
-    image: /assets/images/shiny-server-aws-part2-featured.png
+    image: /assets/images/shiny-server-aws-part2/featured.jpg
 ---
 
-{% include shiny-server-aws-fr.markdown %}
+{% include tableofcontents/shiny-server-aws-fr.markdown %}
 
 La dernière fois, nous nous étions arrêtés à la création de l'application Shiny. Pour rappel, elle est disponible sur Github à l'adresse suivante : [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 
@@ -31,11 +31,11 @@ Mais rassurez-vous, lorsque vous ouvrez un nouveau compte, certains services (li
 
 Une fois votre compte créé, identifiez-vous, et vous arriverez sur une page avec tous les services proposés par AWS :
 
-![Services AWS]({{ "/assets/images/shiny-server-aws-part2-aws-services.png" | absolute_url }}){: .align-center}
+![Services AWS]({{ "/assets/images/shiny-server-aws-part2/aws-services.jpg" | absolute_url }}){: .align-center}
 
 Dans le champ de recherche en haut, tapez *EC2*.
 
-![Kesako]({{ "/assets/images/shiny-server-aws-part2-kesako.png" | absolute_url }}){: .align-right}
+![Kesako]({{ "/assets/images/shiny-server-aws-part2/kesako.jpg" | absolute_url }}){: .align-right}
 
 EC2, ça veut dire Elastic Compute Cloud. En français, un nuage élastique qui fait des calculs.
 
@@ -69,7 +69,7 @@ Puis ensuite, cliquez sur *Launch Instance*
 
 ## Étape 1 : Choisir votre AMI
 
-![Choisir votre AMI]({{ "/assets/images/shiny-server-aws-part2-ami.png" | absolute_url }}){: .align-center}
+![Choisir votre AMI]({{ "/assets/images/shiny-server-aws-part2/ami.jpg" | absolute_url }}){: .align-center}
 
 Une AMI, c'est une *Amazon Machine Image*, c'est-à-dire une sorte de serveur pré-packagé avec déjà plein de choses prêtes à l'intérieur. Il y a des AMIs préparées par Amazon, on peut en créer nous-même, et on peut même en louer à des entreprises tierces (par exemple avec des logiciels propriétaires à l'intérieur).
 
@@ -79,7 +79,7 @@ Sélectionnez-là en cliquant sur Select.
 
 ## Étape 2 : Choisir votre type d'instance
 
-![Choisir votre type d'instance]({{ "/assets/images/shiny-server-aws-part2-instances.png" | absolute_url }}){: .align-center}
+![Choisir votre type d'instance]({{ "/assets/images/shiny-server-aws-part2/instances.jpg" | absolute_url }}){: .align-center}
 
 Le type d'instance correspond à la puissance de votre machine.
 
@@ -95,7 +95,7 @@ Dans l'écran suivant, on ne va rien modifier, donc cliquez directement sur *Nex
 
 ## Étape 3 : Choisir votre taille de disque dur
 
-![Choisir votre taille de disque dur]({{ "/assets/images/shiny-server-aws-part2-ebs.png" | absolute_url }}){: .align-center}
+![Choisir votre taille de disque dur]({{ "/assets/images/shiny-server-aws-part2/ebs.jpg" | absolute_url }}){: .align-center}
 
 Par défaut, AWS choisit de vous allouer 8 GB d'espace sur votre serveur.
 
@@ -111,7 +111,7 @@ Un écran va vous résumer les différentes options que vous avez choisi. Vous p
 
 ## Étape 4 : Créez une clé de sécurité
 
-![Créez une clé de sécurité]({{ "/assets/images/shiny-server-aws-part2-keypairs.png" | absolute_url }}){: .align-center}
+![Créez une clé de sécurité]({{ "/assets/images/shiny-server-aws-part2/keypairs.jpg" | absolute_url }}){: .align-center}
 
 Après avoir cliqué sur *Launch*, AWS va vous demander de créer une paire de clés. Qu'est-ce que c'est que cette histoire de clés ?
 
@@ -129,8 +129,8 @@ Choisissez un nom pour votre clé, et téléchargez-la.
 
 Après quelques minutes, votre instance sera prête et apparaîtra dans la liste de vos instances.
 
-![Nouvelle instance créée]({{ "/assets/images/shiny-server-aws-part2-newinstance.png" | absolute_url }}){: .align-center}
+![Nouvelle instance créée]({{ "/assets/images/shiny-server-aws-part2/newinstance.jpg" | absolute_url }}){: .align-center}
 
 Dans le prochain chapitre, on va voir comment s'y connecter en SSH puis on installera R et R Shiny dessus ! Pour y accéder, cliquez ici :
 
-[Partie 3 - Installer R et R Shiny sur votre nouveau serveur]({{ "/deployer-shiny-app-sur-aws-partie-3" | absolute_url }})
+[Partie 3 - Installer R et R Shiny sur votre nouveau serveur]({{ "/fr/shiny-aws-3" | absolute_url }})
