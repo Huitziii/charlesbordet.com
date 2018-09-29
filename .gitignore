@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 .env
 process
+linear_algebra

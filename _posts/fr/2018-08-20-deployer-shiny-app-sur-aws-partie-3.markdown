@@ -6,10 +6,10 @@ date: 2018-08-20
 lang: fr
 ref: shiny-server-aws-part3
 header:
-    image: /assets/images/shiny-server-aws-part3-featured.png
+    image: /assets/images/shiny-server-aws-part3/featured.jpg
 ---
 
-{% include shiny-server-aws-fr.markdown %}
+{% include tableofcontents/shiny-server-aws-fr.markdown %}
 
 La dernière fois, nous nous étions arrêtés à la création du serveur sur AWS. 
 
@@ -22,7 +22,7 @@ Dans cette nouvelle partie, nous allons apprendre à :
 
 Une fois votre *instance* créée, AWS vous propose un bouton **Connect**. Bouton qui fait apparaître la fenêtre suivante :
 
-![Bouton Connect]({{ "/assets/images/shiny-server-aws-part3-connect.png" | absolute_url }}){: .align-center}
+![Bouton Connect]({{ "/assets/images/shiny-server-aws-part3/connect.jpg" | absolute_url }}){: .align-center}
 
 Ce sont les instructions pour se connecter à votre serveur. À présent, on va séparer les instructions selon votre système d'exploitation.
 
@@ -32,7 +32,7 @@ Si vous êtes sous Windows, vous aurez besoin de télécharger un client SSH, pu
 
 Ensuite, il va vous falloir transformer la clé que vous avez téléchargée dans l'article précédent (vous savez, le fichier avec l'extension *pem*) :
 
-![PuTTYgen]({{ "/assets/images/shiny-server-aws-part3-puttygen.png" | absolute_url }}){: .align-center}
+![PuTTYgen]({{ "/assets/images/shiny-server-aws-part3/puttygen.jpg" | absolute_url }}){: .align-center}
 
 1. Lancez PuTTYgen (tapez "PuTTYgen" dans votre menu démarrer)
 2. Choisissez RSA.
@@ -41,7 +41,7 @@ Ensuite, il va vous falloir transformer la clé que vous avez téléchargée dan
 
 Ensuite, lancez PuTTY puis configurez-le avec les informations données par AWS :
 
-![PuTTY config]({{ "/assets/images/shiny-server-aws-part3-putty-config.png" | absolute_url }}){: .align-center}
+![PuTTY config]({{ "/assets/images/shiny-server-aws-part3/putty-config.jpg" | absolute_url }}){: .align-center}
 
 1. Dans Host Name (or IP address), rentrez la valeur qui se trouve au point 4 du screenshot ci-dessus (c'est *ec2-52-59-238-223.eu-central-1.compute.amazonaws.com* pour moi)
 2. Port : 22
@@ -52,7 +52,7 @@ Cliquez sur "Open", entrez "ubuntu" quand on vous demande **login as**, puis dit
 
 Bravo, vous êtes à présent connecté à votre serveur ! 
 
-![PuTTY console]({{ "/assets/images/shiny-server-aws-part3-putty-console.png" | absolute_url }}){: .align-center}
+![PuTTY console]({{ "/assets/images/shiny-server-aws-part3/putty-console.jpg" | absolute_url }}){: .align-center}
 
 **Pour les utilisateurs de Ubuntu ou Mac**
 
@@ -140,4 +140,4 @@ Vous ne le savez pas encore, mais vous avez une application Shiny qui tourne sur
 
 C'est ce qu'on verra dans la prochaine partie...
 
-[Partie 4 - Déployer l’application sur le serveur]({{ "/deployer-shiny-app-sur-aws-partie-4" | absolute_url }})
+[Partie 4 - Déployer l’application sur le serveur]({{ "/fr/shiny-aws-4" | absolute_url }})

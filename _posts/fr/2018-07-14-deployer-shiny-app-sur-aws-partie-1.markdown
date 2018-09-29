@@ -6,10 +6,10 @@ date: 2018-07-14
 lang: fr
 ref: shiny-server-aws-part1
 header: 
-    image: /assets/images/shiny-server-aws-part1-featured.png
+    image: /assets/images/shiny-server-aws-part1/featured.jpg
 ---
 
-{% include shiny-server-aws-fr.markdown %}
+{% include tableofcontents/shiny-server-aws-fr.markdown %}
 
 Récemment, un de mes clients m'a demandé de lui créer une application en [R Shiny](https://shiny.rstudio.com/) qui permet aux utilisateurs finaux de visualiser tout un tas d'indicateurs et aussi d'interagir avec les données.
 
@@ -21,7 +21,7 @@ Sauf que vient toujours le moment où il faut déployer l'application sur les sy
 
 Et là, ça se complique.
 
-![De Shiny à AWS]({{ "/assets/images/shiny-server-aws-part1-shiny-to-aws.png" | absolute_url }})
+![De Shiny à AWS]({{ "/assets/images/shiny-server-aws-part1/shiny-to-aws.jpg" | absolute_url }})
 
 En tant que data scientist, je maîtrise plutôt bien le langage R et il m'arrive régulièrement de créer des dashboards en Shiny pour faire des reportings automatiques, de la data viz, ou même créer un produit où le client interagit directement avec la donnée.
 
@@ -43,7 +43,7 @@ Il a fallu aller sur chaque poste, installer R, et après on avait préparé un 
 
 Avec le recul, on avait été assez créatif sur le coup.
 
-![Sad Face]({{ "/assets/images/shiny-server-aws-part1-sad-face.png" | absolute_url }}){: .align-right}
+![Sad Face]({{ "/assets/images/shiny-server-aws-part1/sad-face.jpg" | absolute_url }}){: .align-right}
 
 Mais cette solution est horrible !
 
@@ -84,7 +84,7 @@ Un point important aussi est que quand vous créez un nouveau compte sur AWS, vo
 
 De la sorte, tout ce qu'on va faire dans ce tutorial est faisable sans débourser un sou.
 
-![Happy Face]({{ "/assets/images/shiny-server-aws-part1-happy-face.png" | absolute_url }}){: .align-right}
+![Happy Face]({{ "/assets/images/shiny-server-aws-part1/happy-face.jpg" | absolute_url }}){: .align-right}
 
 Les avantages de cette méthode :
 
@@ -128,7 +128,7 @@ C'est pas exactement le but de cet article, du coup ce que je vous propose c'est
 
 J'ai pris celle de l'explorateur de films :
 
-![Movie Explorer]({{ "/assets/images/shiny-server-aws-part1-movie-explorer.png" | absolute_url }}){: .align-center}
+![Movie Explorer]({{ "/assets/images/shiny-server-aws-part1/movie-explorer.jpg" | absolute_url }}){: .align-center}
 
 Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
 
@@ -138,4 +138,4 @@ Cette fois-ci, on est prêts !
 
 Pour continuer vers l'étape suivante, cliquez ici : 
 
-[Partie 2 - Créer un serveur sur AWS]({{ "/deployer-shiny-app-sur-aws-partie-2" | absolute_url }})
+[Partie 2 - Créer un serveur sur AWS]({{ "/fr/shiny-aws-2" | absolute_url }})

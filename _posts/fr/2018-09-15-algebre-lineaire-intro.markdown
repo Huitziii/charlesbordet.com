@@ -6,10 +6,10 @@ date: 2018-09-15
 lang: fr
 ref: linear-algebra-part1
 header:
-    image: /assets/images/linear-algebra-part1-featured.jpg
+    image: /assets/images/linear-algebra-part1/featured.jpg
 ---
 
-{% include linear-algebra-fr.markdown %}
+{% include tableofcontents/linear-algebra-fr.markdown %}
 
 Lorsque je crée des cours autour de la data science, on me demande souvent :
 
@@ -61,7 +61,7 @@ On trace une droite au milieu d'un nuage de points.
 
 Croyez-moi, on n'a pas attendu l'arrivée des stats et [Legendre](https://en.wikipedia.org/wiki/Regression_analysis#History) pour tracer une droite au milieu d'un nuage de points !
 
-![Régression sans stat]({{ "/assets/images/linear-algebra-part1-regression.png" | absolute_url }}){: .align-center}
+![Régression sans stat]({{ "/assets/images/linear-algebra-part1/regression.jpg" | absolute_url }}){: .align-center}
 
 Comment on la trace cette droite ?
 
@@ -135,11 +135,11 @@ Et tous, c'est tous. Sans exception.
 
 *Qui ici sait faire une ACP ?*
 
-![Lever les mains]({{ "/assets/images/linear-algebra-part1-hands-up.png" | absolute_url}}){: .align-center}
+![Lever les mains]({{ "/assets/images/linear-algebra-part1/hands-up.jpg" | absolute_url}}){: .align-center}
 
 *Qui ici comprend la théorie derrière l'ACP et est capable de l'expliquer ?*
 
-![Baisse les mains]({{ "/assets/images/linear-algebra-part1-hands-down.png" | absolute_url}}){: .align-center}
+![Baisse les mains]({{ "/assets/images/linear-algebra-part1/hands-down.jpg" | absolute_url}}){: .align-center}
 
 Ok. (*On se calme dans le fond !*)
 
@@ -165,7 +165,7 @@ Une ligne de code.
 
 **Comment expliquer l'ACP ?**
 
-![Expliquer l'ACP]({{ "/assets/images/linear-algebra-part1-pca.png" | absolute_url}}){: .align-center}
+![Expliquer l'ACP]({{ "/assets/images/linear-algebra-part1/pca.jpg" | absolute_url}}){: .align-center}
 
 *Cette prise d'écran est extraite du livre [Deep Learning](http://www.deeplearningbook.org/) de I. Goodfellow, Y. Bengio, et A. Courville, chapitre 2 Linear Algebra sur l'ACP.*
 {: style="text-align: center;"}
@@ -184,7 +184,7 @@ Ou en tout cas d'être incapable de l'expliquer.
 
 Ça me rappelle cette image qu'on voyait partout pendant un moment :
 
-![L'IA]({{ "/assets/images/linear-algebra-part1-ia.jpg" | absolute_url}}){: .align-center}
+![L'IA]({{ "/assets/images/linear-algebra-part1/ia.jpg" | absolute_url}}){: .align-center}
 
 *Image trouvée sur les internets*
 {: style="text-align: center;"}	
@@ -241,7 +241,7 @@ On a vu une définition exacte un peu plus tard dans l'année.
 
 Je vous la donne juste pour illustrer, d'après Wikipédia :
 
-![Définition d'une application linéaire]({{ "/assets/images/linear-algebra-part1-def.png" | absolute_url}}){: .align-center}
+![Définition d'une application linéaire]({{ "/assets/images/linear-algebra-part1/def.jpg" | absolute_url}}){: .align-center}
 
 Cool, non ?
 
@@ -301,7 +301,7 @@ Et comme elle garde l'origine $$(0, 0)$$ au même point $$(0, 0)$$, on en conclu
 
 Voici à quoi elle ressemble :
 
-![Transformation linéaire]({{ "/assets/images/linear-algebra-part1-matrix-animation.gif" | absolute_url}}){: .align-center}
+![Transformation linéaire]({{ "/assets/images/linear-algebra-part1/matrix-animation.gif" | absolute_url}}){: .align-center}
 
 Regardons un exemple qui cette fois-ci n'est PAS linéaire :
 
@@ -312,7 +312,7 @@ $$f(x, y) = \left\{
 	\end{array}
 \right.$$
 
-![Transformation en cercle]({{ "/assets/images/linear-algebra-part1-circle-animation.gif" | absolute_url}}){: .align-center}
+![Transformation en cercle]({{ "/assets/images/linear-algebra-part1/circle-animation.gif" | absolute_url}}){: .align-center}
 
 D'abord l'origine bouge, cette fois-ci, elle se retrouve aux coordonnées $$(1, 0)$$.
 

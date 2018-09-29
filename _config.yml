@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Charles Bordet"
-  avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio:
     en             : "Freelance data scientist. <br />R | Statistics | Data Science."
     fr             : "Data scientist indépendant. <br />R | Statistique | Data Science."
@@ -257,6 +257,12 @@ compress_html:
   ignore:
     envs: development
 
+# Portfolio
+collections:
+  portfoliofr:
+    output: true
+  portfolioen:
+    output: true
 
 # Defaults
 defaults:
@@ -269,6 +275,28 @@ defaults:
       author_profile: false
       read_time: true
       comments: # true
+      share: true
+      related: false
+  # _portfoliofr
+  - scope:
+      path: ""
+      type: portfoliofr
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: true
+      related: false      
+  # _portfolioen
+  - scope:
+      path: ""
+      type: portfolioen
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
       share: true
       related: false
 

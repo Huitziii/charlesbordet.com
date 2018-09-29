@@ -13,11 +13,11 @@ main:
     url: /en/services/
     lang: en
 
-  - title: "Projets"
-    url: /fr/projets/
+  - title: "Portfolio"
+    url: /fr/portfolio/
     lang: fr
-  - title: "Projects"
-    url: /en/projects/
+  - title: "Portfolio"
+    url: /en/portfolio/
     lang: en
 
   - title: "Contact"

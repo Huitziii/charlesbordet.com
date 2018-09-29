@@ -6,10 +6,10 @@ date: 2018-09-18
 lang: en
 ref: linear-algebra-part1
 header:
-    image: /assets/images/linear-algebra-part1-featured.jpg
+    image: /assets/images/linear-algebra-part1/featured.jpg
 ---
 
-{% include linear-algebra-en.markdown %}
+{% include tableofcontents/linear-algebra-en.markdown %}
 
 Whenever I create courses for data science, I get asked the same question over and over:
 
@@ -61,7 +61,7 @@ All you have to do is draw a line in the middle of a scatterplot.
 
 People did that way before the [Legendre](https://en.wikipedia.org/wiki/Regression_analysis#History) started to develop the theory of regression!
 
-![Regression]({{ "/assets/images/linear-algebra-part1-regression.png" | absolute_url }}){: .align-center}
+![Regression]({{ "/assets/images/linear-algebra-part1/regression.jpg" | absolute_url }}){: .align-center}
 
 How would you draw this line?
 
@@ -137,11 +137,11 @@ All of them without exception.
 
 *Who knows PCA here?*
 
-![Lever les mains]({{ "/assets/images/linear-algebra-part1-hands-up.png" | absolute_url}}){: .align-center}
+![Lever les mains]({{ "/assets/images/linear-algebra-part1/hands-up.jpg" | absolute_url}}){: .align-center}
 
 *Who knows PCA theory and can explain it to me?*
 
-![Baisse les mains]({{ "/assets/images/linear-algebra-part1-hands-down.png" | absolute_url}}){: .align-center}
+![Baisse les mains]({{ "/assets/images/linear-algebra-part1/hands-down.jpg" | absolute_url}}){: .align-center}
 
 Yea..
 
@@ -165,7 +165,7 @@ One line of code.
 
 **How to explain PCA?**
 
-![Expliquer l'ACP]({{ "/assets/images/linear-algebra-part1-pca.png" | absolute_url}}){: .align-center}
+![Expliquer l'ACP]({{ "/assets/images/linear-algebra-part1/pca.jpg" | absolute_url}}){: .align-center}
 
 *Screenshot from the book [Deep Learning](http://www.deeplearningbook.org/) from I. Goodfellow, Y. Bengio, and A. Courville, chapter 2 Linear Algebra on PCA.*
 {: style="text-align: center;"}
@@ -184,7 +184,7 @@ First, I don't know about you, but I'm kind of embarassed to say I'm a data scie
 
 Reminds me of this:
 
-![AI]({{ "/assets/images/linear-algebra-part1-ia.jpg" | absolute_url}}){: .align-center}
+![AI]({{ "/assets/images/linear-algebra-part1/ia.jpg" | absolute_url}}){: .align-center}
 
 *Image that appeared all over the internet*
 {: style="text-align: center;"}
@@ -241,7 +241,7 @@ It exists.
 
 We learned it, and I found it back on Wikipedia:
 
-![Definition of a linear application]({{ "/assets/images/linear-algebra-part1-def-en.png" | absolute_url}}){: .align-center}
+![Definition of a linear application]({{ "/assets/images/linear-algebra-part1/def-en.jpg" | absolute_url}}){: .align-center}
 
 ..
 
@@ -299,7 +299,7 @@ And since it keeps the origin $$(0, 0)$$ at the same point after transformation,
 
 Look at it:
 
-![Linear transformation]({{ "/assets/images/linear-algebra-part1-matrix-animation.gif" | absolute_url}}){: .align-center}
+![Linear transformation]({{ "/assets/images/linear-algebra-part1/matrix-animation.gif" | absolute_url}}){: .align-center}
 
 Now, look at a transformation that is NOT linear:
 
@@ -310,7 +310,7 @@ $$f(x, y) = \left\{
 	\end{array}
 \right.$$
 
-![Circle transformation]({{ "/assets/images/linear-algebra-part1-circle-animation.gif" | absolute_url}}){: .align-center}
+![Circle transformation]({{ "/assets/images/linear-algebra-part1/circle-animation.gif" | absolute_url}}){: .align-center}
 
 First, the origin moves. It lands on the point with coordinates $$(1, 0)$$.
 
@@ -330,7 +330,7 @@ We can do a hell lot of things!
 
 If that got you excited you want to know more... well.. just keep reading to the next article:
 
-Part 1: The three definitions of a vector*(à venir)*
+Part 1: The three definitions of a vector *(soon)*
 
 
 
