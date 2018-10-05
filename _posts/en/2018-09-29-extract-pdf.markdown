@@ -35,9 +35,10 @@ The first way being really tedious and costly when the number of files increases
 
 For example, a client had thousands of invoices that all had the same structure and wanted to get important data from it:
 
-the number of sold items,
-the profits made at each transaction,
-the data from his customers
+* the number of sold items,
+* the profits made at each transaction,
+* the data from his customers
+
 Having everything in PDF files isn’t handy at all. Instead, he wanted a clean spreadsheet where he could easily find who bought what and when and make calculations from it.
 
 Another classical example is when you want to do data analysis from reports or official documents. You will usually find those saved under PDF files rather than freely accessible on webpages.
@@ -56,7 +57,7 @@ The first technique requires you to install the `pdftools` package from CRAN:
 install.packages("pdftools")
 {% endhighlight %}
 
-A quick glance at the [documentation](https://cran.rstudio.com/web/packages/pdftools/pdftools.pdf) will show you the few functions of the package, the most important of which being pdf_text.
+A quick glance at the [documentation](https://cran.rstudio.com/web/packages/pdftools/pdftools.pdf) will show you the few functions of the package, the most important of which being `pdf_text`.
 
 For this article, I will use an official record from the UN that you can find on this [link](https://github.com/Huitziii/crispy-pdf/raw/master/71_PV.62.pdf)
 
@@ -67,7 +68,7 @@ download.file("https://github.com/Huitziii/crispy-pdf/raw/master/71_PV.62.pdf",
 text <- pdf_text("./71_PV.62.pdf")
 {% endhighlight %}
 
-This function will directly export the raw text in a *character* vector with spaces to show the white space and `\n` to show the line breaks.
+This function will directly import the raw text in a *character* vector with spaces to show the white space and `\n` to show the line breaks.
 
 Having a full page in one element of a vector is not the most practical. Using `strsplit` will help you separate lines from each other:
 
@@ -243,7 +244,7 @@ Now that we have a nice clean vector of all text lines in the right order, we ca
 
 This is where you must look into the document to spot some patterns that would help us detect where the speeches start and end.
 
-It’s actually fairly easy since all speakers are introduced with “Mr.” or “Mrs.”. And the president is always called “The President:” or “The Acting President:”
+It’s actually fairly easy since all speakers are introduced with "Mr." or "Mrs.". And the president is always called "The President:" or "The Acting President:"
 
 Let’s get these rows:
 
