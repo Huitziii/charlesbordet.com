@@ -17,13 +17,24 @@
           </li>
           {% endfor %}
           -->
-
-          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-          {% for page in pages %}
-          <li class="masthead__menu-item">
-            <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
-          </li>
-          {% endfor %}
+          
+          {% if page.ref == "index" %}
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for page in pages %}
+              {% if page.autogen == nil %}
+                <li class="masthead__menu-item">
+                  <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for page in pages %}
+            <li class="masthead__menu-item">
+              <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
+            </li>
+            {% endfor %}
+          {% endif %}
           
           {% assign links=site.data.navigation.main | where:"lang", page.lang %}
           {% for link in links %}

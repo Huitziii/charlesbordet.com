@@ -4,7 +4,7 @@ permalink: /en/linear-algebra/
 title: "Linear Algebra for Data Science: Why?"
 date: 2018-09-18
 lang: en
-categories: maths
+categories: [maths, en]
 ref: linear-algebra-part1
 header:
     image: /assets/images/linear-algebra-part1/featured.jpg

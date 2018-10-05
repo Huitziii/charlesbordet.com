@@ -43,6 +43,8 @@ en: &DEFAULT_EN
   search_placeholder_text    : "Enter your search term..."
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
+  newer_page                 : "Newer"
+  older_page                 : "Older"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -138,6 +140,8 @@ fr: &DEFAULT_FR
   comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
+  newer_page                 : "Plus récents"
+  older_page                 : "Articles précédents"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:

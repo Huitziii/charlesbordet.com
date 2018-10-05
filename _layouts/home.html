@@ -4,6 +4,7 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[page.lang].recent_posts | default: "Recent Posts" }}</h3>
 
+<!--
 {% assign posts=site.posts | where:"lang", page.lang %}
 
 {% for post in posts %}
@@ -11,3 +12,65 @@ layout: archive
 {% endfor %}
 
 {% include paginator.html %}
+-->
+
+{% for post in paginator.posts %}
+	{% include archive-single.html %}
+{% endfor %}
+
+<!--
+{% if paginator.total_pages > 1 %}
+<ul>
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">{{ site.data.ui-text[page.lang].newer_page | default: "Newer" }}</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">{{ site.data.ui-text[page.lang].older_page | default: "Older" }}</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+-->
+
+<paginate>
+  <ul>
+  {%- if paginator.page_trail -%}
+
+    {% if paginator.page > 2 -%}
+    <li class="previous">
+        <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;&lt;</a>
+    </li>
+    {%- endif -%}
+
+    {%- if paginator.previous_page -%}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;</a>
+    </li>
+    {%- endif -%}
+
+    {%- if paginator.page_trail -%}
+      {%- for trail in paginator.page_trail -%}
+        <li>
+          <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}" {%- if paginator.page == trail.num -%}class="active"{%- endif -%}>{{ trail.num }}</a>
+        </li>
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- if paginator.next_page -%}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&gt;</a>
+    </li>
+    {%- endif -%}
+
+    {%- assign notNearEnd = paginator.page | plus:1 -%}
+    {%- if notNearEnd < paginator.total_pages  -%}
+    <li class="previous">
+        <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">&gt;&gt;</a>
+    </li>
+    {%- endif -%}
+  {%- endif -%}
+  </ul>
+</paginate>
