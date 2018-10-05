@@ -4,6 +4,7 @@ permalink: /en/how-to-predict-ltv-saas-startup/
 title: "SaaS startup: How to predict LTV for new users?"
 date: 2018-09-27
 lang: en
+categories: statistics
 ref: crash-course-ltv-1
 header:
     image: /assets/images/crash-course-ltv-1/featured.jpg

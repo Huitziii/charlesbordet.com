@@ -6,6 +6,13 @@ main:
     url: /en/
     lang: en
 
+  - title: "Archives"
+    url: /fr/categories
+    lang: fr
+  - title: "Archives"
+    url: /en/categories
+    lang: en
+
   - title: "Services"
     url: /fr/services/
     lang: fr

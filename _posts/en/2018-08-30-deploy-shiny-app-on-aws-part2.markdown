@@ -4,6 +4,7 @@ permalink: /en/shiny-aws-2/
 title: "How to deploy a Shiny app on AWS - Part 2"
 date: 2018-08-30
 lang: en
+categories: shiny
 ref: shiny-server-aws-part2
 header:
     image: /assets/images/shiny-server-aws-part2/featured.jpg

@@ -18,12 +18,12 @@ Mes clients font appel à moi pour les services suivants :
 Ils me font confiance :
 
 <div class="text-center">
-	<img src="{{ "/assets/images/renault-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/bcg-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/emma-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/formation-bigdata-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/cargomedia-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/renault-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/bcg-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/emma-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/formation-bigdata-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/cargomedia-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
 </div>
 
 # Analyses statistiques & Machine Learning
@@ -80,8 +80,8 @@ Par la suite, j'ai continué à développer mes compétences afin de maîtriser 
 # Reporting et dashboards
 
 <div class="text-center">
-	<a href="{{ "/assets/images/duraviz.png" | absolute_url }}"><img src="{{ "/assets/images/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
-	<a href="{{ "/assets/images/mds.png" | absolute_url }}"><img src="{{ "/assets/images/mds.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="{{ "/assets/images/services/duraviz.png" | absolute_url }}"><img src="{{ "/assets/images/services/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="{{ "/assets/images/services/mds.png" | absolute_url }}"><img src="{{ "/assets/images/services/mds.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
 La mise en place de modèles statistiques et mesures de KPIs nécessite une surveillance continue de ces indicateurs et de la bonne marche des modèles. C'est pourquoi mes clients ont un besoin important dans la mise en place de tableaux de bord de tous types.
@@ -99,8 +99,8 @@ R Shiny est particulièrement adapté pour une utilisation en interne afin de su
 # Formation en R et Statistiques
 
 <div class="text-center">
-	<a href="https://www.udemy.com/le-deep-learning-de-a-a-z/" target="_blank"><img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
-	<a href="https://www.udemy.com/datascience-r/" target="_blank"><img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE" target="_blank"><img src="{{ "/assets/images/services/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="https://www.udemy.com/datascience-r/?couponCode=WEBSITE" target="_blank"><img src="{{ "/assets/images/services/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
 Afin de transmettre mon savoir, je crée des cours en ligne regroupant plus de 2000 étudiants :

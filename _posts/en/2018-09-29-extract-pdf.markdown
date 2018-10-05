@@ -4,6 +4,7 @@ permalink: /en/extract-pdf/
 title: "How to Extract and Clean Data From PDF Files in R"
 date: 2018-09-29
 lang: en
+categories: r
 ref: extract-pdf
 header:
     image: /assets/images/extract-pdf/featured.jpg

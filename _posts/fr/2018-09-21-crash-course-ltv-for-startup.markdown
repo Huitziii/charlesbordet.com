@@ -4,6 +4,7 @@ permalink: /fr/comment-predire-ltv-pour-startup-saas/
 title: "Startup SaaS : Comment prédire la LTV d'un nouvel utilisateur ?"
 date: 2018-09-21
 lang: fr
+categories: statistics
 ref: crash-course-ltv-1
 header:
     image: /assets/images/crash-course-ltv-1/featured.jpg

@@ -17,7 +17,7 @@ layout: archive
       {% if category[1].size == i %}
         <li>
           <a href="#{{ category[0] | slugify }}">
-            <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+            <strong>{{ category[0] }}</strong> <!-- <span class="taxonomy__count">{{ i }}</span> -->
           </a>
         </li>
       {% endif %}
@@ -32,7 +32,9 @@ layout: archive
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in category.last %}
-            {% include archive-single.html type=page.entries_layout %}
+            {% if post.lang == page.lang %}
+              {% include archive-single.html type=page.entries_layout %}
+            {% endif %}
           {% endfor %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.ui-text[page.lang].back_to_top | default: 'Back to Top' }} &uarr;</a>

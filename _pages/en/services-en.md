@@ -18,12 +18,12 @@ My clients hire me for:
 I have worked with:
 
 <div class="text-center">
-	<img src="{{ "/assets/images/renault-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/bcg-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/emma-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/formation-bigdata-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/cargomedia-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
-	<img src="{{ "/assets/images/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/renault-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/bcg-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/emma-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/formation-bigdata-logo.jpg" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/cargomedia-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
+	<img src="{{ "/assets/images/services/dataexp-logo.png" | absolute_url }}" width="150px" style="margin: 20px">
 </div>
 
 ## Statistical Analysis and Machine Learning
@@ -34,7 +34,7 @@ I help my clients extract value from their data. For example:
 
 **Behavioral analysis** of patients suffering from Vitiligo (a skin disease) in order to better understand the factors impacting the severity of the disease.
 
-**Incidentology studies**: Goal is to quickly assess the gravity and cost of product issues to quickly take actions.
+**Incidentology studies**: Goal is to quickly assess the seriousness and cost of product issues to quickly take actions.
 
 Visit the [Projects]({{ "/en/projects" | absolute_url }}) for more.
 
@@ -45,8 +45,8 @@ Then, I kept developing new skills to first master **R** and then **Python**, wh
 ## Building automatic reports & Dashboards
 
 <div class="text-center">
-	<a href="{{ "/assets/images/duraviz.png" | absolute_url }}"><img src="{{ "/assets/images/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
-	<a href="{{ "/assets/images/mds.png" | absolute_url }}"><img src="{{ "/assets/images/mds.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="{{ "/assets/images/services/duraviz.png" | absolute_url }}"><img src="{{ "/assets/images/services/duraviz.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="{{ "/assets/images/services/mds.png" | absolute_url }}"><img src="{{ "/assets/images/services/mds.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
 Setting up statistical models and KPIs tracking lead to a continuous monitoring of the indicators and of the model predictions. That's why my clients usually need to set up all kinds of dashboards.
@@ -66,8 +66,8 @@ R Shiny is particularly convenient for internal use in a team, to track daily KP
 ## Professional training in R and Statistics
 
 <div class="text-center">
-	<a href="https://www.udemy.com/le-deep-learning-de-a-a-z/" target="_blank"><img src="{{ "/assets/images/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
-	<a href="https://www.udemy.com/datascience-r/" target="_blank"><img src="{{ "/assets/images/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="https://www.udemy.com/le-deep-learning-de-a-a-z/?couponCode=WEBSITE" target="_blank"><img src="{{ "/assets/images/services/deep-learning-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
+	<a href="https://www.udemy.com/datascience-r/?couponCode=WEBSITE" target="_blank"><img src="{{ "/assets/images/services/r-udemy.png" | absolute_url }}" width="250px" style="margin: 30px"></a>
 </div>
 
 I like to teach so I create online courses. So far, I have been able to gather more than 2000 students with these courses (in French):
