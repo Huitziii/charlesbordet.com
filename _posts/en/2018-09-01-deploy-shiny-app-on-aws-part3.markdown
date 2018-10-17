@@ -151,4 +151,4 @@ You don't know it yet, but you already have a Shiny app running on your server n
 
 That's what we'll see in the next part...
 
-[Part 4 - Deploy the app on the server]({{ "/en/shiny-aws-4" | absolute_url }})
+Part 4 - Deploy the app on the server (*coming soon*)

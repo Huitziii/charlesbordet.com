@@ -141,4 +141,4 @@ Vous ne le savez pas encore, mais vous avez une application Shiny qui tourne sur
 
 C'est ce qu'on verra dans la prochaine partie...
 
-[Partie 4 - Déployer l’application sur le serveur]({{ "/fr/shiny-aws-4" | absolute_url }})
+Partie 4 - Déployer l’application sur le serveur (*à venir*)
