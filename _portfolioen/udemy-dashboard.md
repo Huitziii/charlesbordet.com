@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /en/portfolio/udemy-dashboard
+permalink: /en/portfolio/udemy-dashboard/
 title: "Udemy Dashboard"
 date: 2018-09-29
 lang: en
