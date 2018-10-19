@@ -4,7 +4,7 @@ permalink: /fr/extract-pdf/
 title: "Comment extraire et analyser les données de fichiers PDF en R"
 date: 2018-10-05
 lang: fr
-categories: [r, en]
+categories: [r, fr]
 ref: extract-pdf
 header:
     image: /assets/images/extract-pdf/featured.jpg

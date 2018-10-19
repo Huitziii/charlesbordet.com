@@ -9,14 +9,14 @@
         {% endif %}
         <ul class="visible-links">
 
-          <!-- 
+          
           {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
           {% for post in posts %}
           <li class="masthead__menu-item">
             <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
           </li>
           {% endfor %}
-          -->
+          
           
           {% if page.ref == "index" %}
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
