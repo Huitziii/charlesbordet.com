@@ -136,7 +136,7 @@ def f(x):
     return 2 * x * x * np.cos(x) - 5 * x
 {% endhighlight %}
 
-Et étudions-la sur l'intervalle [-5, 5] :
+Et étudions-la sur l'intervalle $$[-5, 5]$$ :
 
 ![Fonction]({{ "assets/images/gradient-descent/function.png" | absolute_url}}){: .align-center}
 
