@@ -72,7 +72,7 @@ But.. mathematically?
 
 What we do is minimize the vertical distances between each point and the line.
 
-So, if you have a line $$y = \beta_0 x + \beta_1$$, what we want is to estimate $$\beta_0$$ et $$\beta_1$$.
+So, if you have a line $$y = \beta_0 x + \beta_1$$, what we want is to estimate $$\beta_0$$ and $$\beta_1$$.
 
 Mathematically, you the sum of distances:
 
