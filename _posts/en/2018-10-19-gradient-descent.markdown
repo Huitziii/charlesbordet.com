@@ -2,6 +2,7 @@
 layout: single
 permalink: /en/gradient-descent/
 title: "Guide to Gradient Descent in 3 Steps and 12 Drawings"
+description: "Need a reminder on gradient descent? We all do! This article explains in simple terms why we need it, how it works, and even show you a Python implementation!"
 date: 2018-10-19
 lang: en
 categories: [machine learning, en]

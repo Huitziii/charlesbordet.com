@@ -2,6 +2,7 @@
 layout: single
 permalink: /fr/extract-pdf/
 title: "Comment extraire et analyser les données de fichiers PDF en R"
+description: "R est un outil formidable pour faire du text mining. Encore faut-il pouvoir extraire le texte de vos documents PDF ! Cet article explique exactement comment faire, et aussi comment préparer vos données pour l'analyse !"
 date: 2018-10-05
 lang: fr
 categories: [r, fr]

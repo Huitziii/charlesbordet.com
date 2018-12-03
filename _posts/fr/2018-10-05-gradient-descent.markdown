@@ -2,6 +2,7 @@
 layout: single
 permalink: /fr/gradient-descent/
 title: "Comprendre la descente de gradient en 3 étapes et 12 dessins"
+description: "Besoin d'un petit rappel sur la descente de gradient ? Cet article explique en images pourquoi on l'utilise, comment ça marche, et vous montre même une implémentation en Python !"
 date: 2018-10-05
 lang: fr
 categories: [machine learning, fr]

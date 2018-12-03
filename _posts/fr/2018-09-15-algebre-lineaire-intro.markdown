@@ -2,6 +2,7 @@
 layout: single
 permalink: /fr/linear-algebra/
 title: "L'algèbre linéaire pour la Data Science : Pourquoi ?"
+description: "Quels sont les pré-requis mathématiques à connaître pour la data science ? Je montre dans cette série d'articles les concepts essentiels d'algèbre linéaire à connaître. Que vous soyez novices ou ayez besoin d'une petite révision, c'est pour vous !"
 date: 2018-09-15
 lang: fr
 categories: [maths, fr]
