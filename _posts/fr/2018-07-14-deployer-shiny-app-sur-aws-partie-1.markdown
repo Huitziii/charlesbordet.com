@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /fr/shiny-aws-1/
-title: "Comment déployer une application Shiny sur AWS - Partie 1"
+title: "Déployer Shiny sur AWS - Créer l'application Shiny"
 date: 2018-07-14
 lang: fr
 categories: [shiny, fr]
@@ -131,9 +131,9 @@ J'ai pris celle de l'explorateur de films :
 
 ![Movie Explorer]({{ "/assets/images/shiny-server-aws-part1/movie-explorer.jpg" | absolute_url }}){: .align-center}
 
-Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : [https://github.com/Huitziii/movie-explorer]("https://github.com/Huitziii/movie-explorer")
+Et j'ai créé un repo sur Github pour que vous puissiez la prendre facilement : <a href="https://github.com/Huitziii/movie-explorer" target="_blank">https://github.com/Huitziii/movie-explorer</a>
 
-Notez que vous aurez besoin de git et d'une console pour suivre ce tutoriel. Vous pouvez télécharger git à l'adresse suivante : [https://git-scm.com/downloads]("https://git-scm.com/downloads")
+Notez que vous aurez besoin de git et d'une console pour suivre ce tutoriel. Vous pouvez télécharger git à l'adresse suivante : <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a>
 
 Cette fois-ci, on est prêts !
 

@@ -4,3 +4,4 @@ _site
 .env
 process
 linear_algebra
+tutorial.pem

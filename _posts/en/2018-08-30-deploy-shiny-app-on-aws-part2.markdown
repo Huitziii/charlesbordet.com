@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /en/shiny-aws-2/
-title: "How to deploy a Shiny app on AWS - Part 2"
+title: "Deploy Shiny on AWS - Create a server"
 date: 2018-08-30
 lang: en
 categories: [shiny, en]

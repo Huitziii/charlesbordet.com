@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /en/shiny-aws-3/
-title: "How to deploy a Shiny app on AWS - Part 3"
+title: "Deploy Shiny on AWS - Install R and R Shiny"
 date: 2018-09-01
 lang: en
 categories: [shiny, en]
@@ -70,8 +70,8 @@ Open a console, change the directory to be in the one that contains the *pem* ke
 For example, for me it's:
 
 {% highlight shell %}
-charles@blue:~$ cd Downloads/
-charles@blue:~/Downloads$ ssh -i "tutorial.pem" ubuntu@ec2-52-59-238-223.eu-central-1.compute.amazonaws.com
+$ cd Downloads/
+$ ssh -i "tutorial.pem" ubuntu@ec2-52-59-238-223.eu-central-1.compute.amazonaws.com
 {% endhighlight %}
 
 Say "yes", and you're in!
@@ -79,7 +79,7 @@ Say "yes", and you're in!
 If you get an error message such as "WARNING: UNPROTECTED PRIVATE KEY FILE!", it's normal. You have to change the rights of the file by typing:
 
 {% highlight shell %}
-chmod 400 tutorial.pem
+$ chmod 400 tutorial.pem
 {% endhighlight %}
 
 ## How to install Shiny Server
@@ -90,9 +90,9 @@ And of course, before that, we'll need to install R!
 
 The Ubuntu repos usually contain an outdated version of R. So instead, we'll first add the CRAN repo:
 
-{% highlight R %}
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
+{% highlight shell %}
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+$ sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
 {% endhighlight %}
 
 **Important note**: At the time of the writing of this article, AWS still uses Ubuntu 16.04 LTS (i.e. the stable version of April 2016). But Ubuntu 18.04 LTS is now out and I guess that AWS will make the switch at some time in the future. 
@@ -108,8 +108,8 @@ If you're using Ubuntu 18.04, then you will need to change 'xenial' by 'bionic' 
 Once it's done, the CRAN repo is added and you can install R:
 
 {% highlight shell %}
-sudo apt update
-sudo apt install r-base-dev
+$ sudo apt update
+$ sudo apt install r-base-dev
 {% endhighlight %}
 
 Once R is installed, we also need to install the *shiny* package before installing Shiny Server.
@@ -117,7 +117,7 @@ Once R is installed, we also need to install the *shiny* package before installi
 Run R in admin mode and install the package:
 
 {% highlight shell %}
-sudo R
+$ sudo R
 > install.packages("shiny")
 {% endhighlight %}
 
@@ -134,9 +134,9 @@ Go on [https://www.rstudio.com/products/shiny/download-server/](https://www.rstu
 For me, it's:
 
 {% highlight shell %}
-sudo apt-get install gdebi-core
-wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.7.907-amd64.deb
-sudo gdebi shiny-server-1.5.7.907-amd64.deb
+$ sudo apt-get install gdebi-core
+$ wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.7.907-amd64.deb
+$ sudo gdebi shiny-server-1.5.7.907-amd64.deb
 {% endhighlight %}
 
 The last two lines might be different if a new version is released.

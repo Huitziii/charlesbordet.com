@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /fr/shiny-aws-3/
-title: "Comment déployer une application Shiny sur AWS - Partie 3"
+title: "Déployer Shiny sur AWS - Installer R et R Shiny sur le serveur"
 date: 2018-08-20
 lang: fr
 categories: [shiny, fr]
@@ -64,8 +64,8 @@ Il vous suffit d'ouvrir une console, de vous déplacer jusqu'au répertoire qui 
 Par exemple pour moi, c'est :
 
 {% highlight shell %}
-charles@blue:~$ cd Downloads/
-charles@blue:~/Downloads$ ssh -i "tutorial.pem" ubuntu@ec2-52-59-238-223.eu-central-1.compute.amazonaws.com
+$ cd Downloads/
+$ ssh -i "tutorial.pem" ubuntu@ec2-52-59-238-223.eu-central-1.compute.amazonaws.com
 {% endhighlight %}
 
 Dites "yes" et vous serez connecté.
@@ -73,7 +73,7 @@ Dites "yes" et vous serez connecté.
 Si vous obtenez un message d'erreur "WARNING: UNPROTECTED PRIVATE KEY FILE!", alors il vous faudra changer les droits du fichier avec la commande suivante :
 
 {% highlight shell %}
-chmod 400 tutorial.pem
+$ chmod 400 tutorial.pem
 {% endhighlight %}
 
 ## Comment installer Shiny Server ?
@@ -84,9 +84,9 @@ Et un premier pré-requis, c'est évidemment d'installer R !
 
 Généralement, les repos d'Ubuntu ne contiennent pas la dernière version de R. Du coup, on va directement ajouter le repo du CRAN de cette manière :
 
-{% highlight R %}
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
+{% highlight shell %}
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+$ sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
 {% endhighlight %}
 
 **Note importante** : À l'heure où j'écris cet article, AWS propose toujours des serveurs équipés de Ubuntu 16.04 LTS (c'est-à-dire la version stable de avril 2016). Mais la version Ubuntu 18.04 LTS est sortie et il se pourrait qu'au moment où vous lisiez cet article, votre serveur soit équipé de 18.04. 
@@ -102,8 +102,8 @@ Si vous êtes sous Ubuntu 18.04, alors remplacez 'xenial' par 'bionic'
 Une fois ces commandes lancées, le repo du CRAN est ajouté. On peut alors installer R :
 
 {% highlight shell %}
-sudo apt update
-sudo apt install r-base-dev
+$ sudo apt update
+$ sudo apt install r-base-dev
 {% endhighlight %}
 
 Une fois R installé, et en préambule à l'installation de Shiny Server, il va falloir installer le package *shiny*.
@@ -111,7 +111,7 @@ Une fois R installé, et en préambule à l'installation de Shiny Server, il va 
 Pour ça, lancez R en mode administrateur et installez le package :
 
 {% highlight shell %}
-sudo R
+$ sudo R
 > install.packages("shiny")
 {% endhighlight %}
 
@@ -124,9 +124,9 @@ Il va falloir aller télécharger la dernière version d'abord. Rendez-vous sur 
 Pour moi, il s'agit de :
 
 {% highlight shell %}
-sudo apt-get install gdebi-core
-wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.7.907-amd64.deb
-sudo gdebi shiny-server-1.5.7.907-amd64.deb
+$ sudo apt-get install gdebi-core
+$ wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.7.907-amd64.deb
+$ sudo gdebi shiny-server-1.5.7.907-amd64.deb
 {% endhighlight %}
 
 A priori les deux dernières lignes seront différentes pour vous si une nouvelle version de Shiny Server sort entre-temps.
