@@ -1,0 +1,170 @@
+---
+layout: single
+permalink: /fr/shiny-aws-4/
+title: "Déployer Shiny sur AWS - Comment envoyer l'application sur votre serveur ?"
+description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 4 : Après avoir créé le serveur et installé Shiny Server, on déploie l'application et on la rend accessible à tous !"
+date: 2018-10-23
+lang: fr
+categories: [shiny, fr]
+ref: shiny-server-aws-part4
+header:
+    image: /assets/images/shiny-server-aws-part4/featured.jpg
+---
+
+1. Comment accéder à l'application Shiny installée par défaut ?
+2. Comment ajouter votre application sur votre serveur ?
+	J'explique d'abord où se trouve l'application par défaut.
+	Je montre le fichier de configuration.
+	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
+	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.
+
+
+
+
+{% include tableofcontents/shiny-server-aws-fr.markdown %}
+
+Rappelons les étapes que nous avons déjà faites.
+
+D'abord, on a créé une application Shiny et on l'a envoyée sur Github. Ensuite, on a créé un compte sur AWS pour ouvrir un serveur, sur lequel on a préparé le terrain en installant R et R Shiny.
+
+À la fin du précédent article, je vous disais que vous avez *déjà* une appli Shiny qui tourne sur votre serveur !
+
+En effet, elle est apparue en installant R Shiny.
+
+## Comment accéder à l'application Shiny installée par défaut ?
+
+Pour y accéder, deux étapes :
+
+* Trouver l'adresse IP de votre serveur
+* Ouvrir le port 3838 sur le pare-feu
+
+Dès que vous activez votre serveur sur AWS, une adresse IP y est affectée automatiquement. 
+
+Attention, celle-ci change dès que vous éteignez/rallumez le serveur ! Si vous voulez avoir une IP fixe, il faudra aller voir dans "Elastic IP" et allouer une adresse IP directement à votre serveur.
+
+Dans votre dashboard sur EC2, il y a une colonne **IPv4 Public IP**.
+
+Repérez-la et notez l'adresse IP.
+
+<a href="{{ "/assets/images/shiny-server-aws-part4/ip_address.png" | absolute_url }}"><img src="{{ "/assets/images/shiny-server-aws-part4/ip_address.png" | absolute_url }}" width="100%"></a>
+
+Chez moi, c'est *3.121.42.9*
+
+Pour accéder à l'application Shiny, il suffit alors simplement de taper l'adresse IP dans votre navigateur préférée en spécifiant le port réservé à Shiny : 3838
+
+{% highlight shell %}
+3.121.42.9:3838
+{% endhighlight %}
+
+Sauf que... si je fais ça, la page ne se charge pas. 
+
+![Firewall AWS]({{ "/assets/images/shiny-server-aws-part4/firewall.png" | absolute_url }}){: .align-center}
+
+En effet : **Par défaut, AWS n'autorise que le port 22**, c'est-à-dire le port réservé à SSH, le protocole qu'on a utilisé dans l'article précédent pour se connecter au serveur via la console.
+
+Pour changer ça, à partir du dashboard EC2 :
+
+* Sélectionnez votre instance.
+* Dans le cadre du bas, repérez la ligne *Security groups* et cliquez sur le premier lien.
+* Dans la nouvelle fenêtre, dans le cadre du bas, cliquez sur "Inbound", le deuxième onglet. Vous voyez alors que seulement le port 22 apparaît.
+* Cliquez sur "Edit", puis dans le pop-up, "Add Rule". Les paramètres à entrer sont les suivants :
+
+| Type            | Protocol | Port Range | Source            | Description |
+| --------------- | -------- | ---------- | ----------------- | ----------- |
+| SSH             | TCP      | 22         | Custom: 0.0.0.0/0 |             |
+| Custom TCP Rule | TCP      | 3838       | Custom: 0.0.0.0/0 |             |
+
+Voici quelques screenshots si jamais vous êtes perdu :
+
+<a href="{{ "/assets/images/shiny-server-aws-part4/open_port.png" | absolute_url }}"><img src="{{ "/assets/images/shiny-server-aws-part4/open_port.png" | absolute_url }}" width="100%"></a>
+
+.
+
+<a href="{{ "/assets/images/shiny-server-aws-part4/open_port-2.png" | absolute_url }}"><img src="{{ "/assets/images/shiny-server-aws-part4/open_port-2.png" | absolute_url }}" width="100%"></a>
+
+À présent, on a ouvert le port 3838 et l'application est accessible !
+
+Ré-essayons d'y accéder :
+
+{% highlight shell %}
+3.121.42.9:3838
+{% endhighlight %}
+
+Cette fois-ci...
+
+![Default app]({{ "/assets/images/shiny-server-aws-part4/default_app.png" | absolute_url }}){: .align-center}
+
+Boom !
+
+Ça marche ! Top cool !
+
+C'est une page html avec des widgets shiny sur le côté droit de la page.
+
+D'ailleurs, vous noterez peut-être un message d'erreur dans un des widgets : "An error has occurred". C'est tout simplement un problème de package qui n'est pas installé.
+
+Ça c'est chouette mais.. le but c'est de mettre notre application maintenant !
+
+## Comment ajouter votre application sur votre serveur ?
+
+
+	J'explique d'abord où se trouve l'application par défaut.
+	Je montre le fichier de configuration.
+	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
+	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.
+
+
+
+Pour ça, on va devoir retourner dans la console sur notre serveur.
+
+Si vous avez déjà oublié comment on faisait, retournez voir l'article précédent [Installer R et R Shiny sur le serveur]({{ "/fr/shiny-aws-3" | absolute_url }}).
+
+Dans un premier temps, on va explorer un peu notre serveur.
+
+On vient tout juste de voir que quand on installe Shiny Server pour la première fois, une application par défaut s'installe et nous souhaite la bienvenue !
+
+Où se trouve cette application ?
+
+Elle se trouve tout simplement dans le dossier `/srv/shiny-server`, et c'est là que seront stockées toutes vos applications.
+
+Tapez les commandes suivantes dans votre console :
+
+{% highlight shell %}
+$ cd /srv/shiny-server/
+$ ls
+index.html  sample-apps
+{% endhighlight %}
+
+Vous allez voir juste un seul dossier : `sample-apps`, et un fichier : `index.html`.
+
+Le fichier `index.html` correspond à ce que nous avons vu lorsque nous sommes allés nous connecter sur la page web de notre serveur, et il faut appel à l'application qui se trouve dans `sample-apps`. Si on va voir dedans :
+
+{% highlight shell %}
+$ cd sample-apps/hello
+$ ls
+server.R  ui.R
+{% endhighlight %}
+
+On retrouve nos fidèles `server.R` et `ui.R` qui sont la base de toute application Shiny !
+
+Par défaut, Shiny Server va aller chercher les applications qui se trouvent dans ce dossier. Il est possible de le changer à partir du fichier de config qui se trouve dans `/etc/shiny-server/shiny-server.conf` mais je vous le déconseille.
+
+Ce qu'on va plutôt faire, c'est :
+
+1. Télécharger notre application dans un dossier de travail.
+2. Créer un raccourci dans `/srv/shiny-server`.
+
+C'est généralement la pratique qui est recommandée.
+
+Alors au travail !
+
+D'abord, on retourne dans le dossier de base :
+
+{% highlight shell %}
+$ cd
+{% endhighlight %}
+
+Ensuite, on **clone** notre application qui se trouve sur Github :
+
+{% highlight shell %}
+$ git clone https://github.com/Huitziii/movie-explorer.git
+{% endhighlight %}
