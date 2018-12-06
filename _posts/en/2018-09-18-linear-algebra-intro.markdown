@@ -3,6 +3,7 @@ layout: single
 permalink: /en/linear-algebra/
 title: "Linear Algebra for Data Science: Why?"
 description: "What are the math prerequisites for data science? I show you in this article what are the essential concepts of linear algebra you MUST know. Whether you're a beginner or someone who needs a refresher, it's for you!"
+excerpt: "People often ask me what are the math prerequisites for data science. Linear algebra is the most important math topic to know if you want to get into machine learning and predictive analytics! That's why I'm starting this series on the essential concepts to know. Whether you're a beginner or someone who needs a refresher, it's for you!"
 date: 2018-09-18
 lang: en
 categories: [maths, en]

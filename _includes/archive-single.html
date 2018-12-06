@@ -33,9 +33,9 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 350 }}</p>{% endif %}
     {% if post.header %}
-      <p><img src="{{ post.header.image }}" width="50%" style="margin:auto; display:block;"/></p>
+      <p><img src="{{ post.header.image }}" width="100%" style="margin:auto; display:block;"/></p>
     {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 250 }}</p>{% endif %}
   </article>
 </div>

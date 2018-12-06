@@ -3,6 +3,7 @@ layout: single
 permalink: /en/how-to-predict-ltv-saas-startup/
 title: "SaaS startup: How to predict LTV for new users?"
 description: "If you have a SaaS product, you already know the question: What is the value of my users? How to predict their churn rates? In this article, I explain how a statistician can help you answer these questions for you."
+excerpt: "If you have a SaaS product, you already know the question: What is the value of my users? How to predict their churn rates? In this article, I explain how a statistician can help you answer these questions for you."
 date: 2018-09-27
 lang: en
 categories: [statistics, en]

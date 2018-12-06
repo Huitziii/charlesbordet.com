@@ -3,6 +3,7 @@ layout: single
 permalink: /en/extract-pdf/
 title: "How to Extract and Clean Data From PDF Files in R"
 description: "R is a powerful tool for text mining. But you still need to get the data first, and it can easily become a pain when you deal with PDF files. This article shows you how to extract what you need and get the data ready for analysis!"
+excerpt: "R is a powerful tool for text mining. But you still need to get the data first, and it can easily become a pain when you deal with PDF files. This article shows you how to extract what you need and get the data ready for analysis!"
 date: 2018-09-29
 lang: en
 categories: [r, en]

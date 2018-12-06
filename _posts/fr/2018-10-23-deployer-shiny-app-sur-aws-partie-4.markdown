@@ -3,23 +3,14 @@ layout: single
 permalink: /fr/shiny-aws-4/
 title: "Déployer Shiny sur AWS - Comment envoyer l'application sur votre serveur ?"
 description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 4 : Après avoir créé le serveur et installé Shiny Server, on déploie l'application et on la rend accessible à tous !"
-date: 2018-12-15
+excerpt: "On poursuit la série sur 'Comment déployer une application Shiny sur AWS' avec ce 4e et dernier article où enfin, vous allez voir votre application apparaître sur les internets !"
+date: 2018-12-01
 lang: fr
 categories: [shiny, fr]
 ref: shiny-server-aws-part4
 header:
     image: /assets/images/shiny-server-aws-part4/featured.jpg
 ---
-
-1. Comment accéder à l'application Shiny installée par défaut ?
-2. Comment ajouter votre application sur votre serveur ?
-	J'explique d'abord où se trouve l'application par défaut.
-	Je montre le fichier de configuration.
-	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
-	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.
-
-
-
 
 {% include tableofcontents/shiny-server-aws-fr.markdown %}
 
@@ -106,14 +97,6 @@ D'ailleurs, vous noterez peut-être un message d'erreur dans un des widgets : "A
 
 ## Comment ajouter votre application sur votre serveur ?
 
-
-	J'explique d'abord où se trouve l'application par défaut.
-	Je montre le fichier de configuration.
-	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
-	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.
-
-
-
 Pour ça, on va devoir retourner dans la console sur notre serveur.
 
 Si vous avez déjà oublié comment on faisait, retournez voir l'article précédent [Installer R et R Shiny sur le serveur]({{ "/fr/shiny-aws-3" | absolute_url }}).
@@ -124,7 +107,7 @@ On vient tout juste de voir que quand on installe Shiny Server pour la première
 
 Où se trouve cette application ?
 
-Elle se trouve tout simplement dans le dossier `/srv/shiny-server`, et c'est là que seront stockées toutes vos applications.
+Elle se trouve tout simplement dans le dossier `/srv/shiny-server/`, et c'est là que seront stockées toutes vos applications.
 
 Tapez les commandes suivantes dans votre console :
 
@@ -136,7 +119,7 @@ index.html  sample-apps
 
 Vous allez voir juste un seul dossier : `sample-apps`, et un fichier : `index.html`.
 
-Le fichier `index.html` correspond à ce que nous avons vu lorsque nous sommes allés nous connecter sur la page web de notre serveur, et il faut appel à l'application qui se trouve dans `sample-apps`. Si on va voir dedans :
+Le fichier `index.html` correspond à ce que nous avons vu lorsque nous sommes allés nous connecter sur la page web de notre serveur, et il fait appel à l'application qui se trouve dans `sample-apps`. Si on va voir dedans :
 
 {% highlight shell %}
 $ cd sample-apps/hello
@@ -151,7 +134,7 @@ Par défaut, Shiny Server va aller chercher les applications qui se trouvent dan
 Ce qu'on va plutôt faire, c'est :
 
 1. Télécharger notre application dans un dossier de travail.
-2. Créer un raccourci dans `/srv/shiny-server`.
+2. Créer un raccourci dans `/srv/shiny-server/`.
 
 C'est généralement la pratique qui est recommandée.
 
@@ -167,4 +150,104 @@ Ensuite, on **clone** notre application qui se trouve sur Github :
 
 {% highlight shell %}
 $ git clone https://github.com/Huitziii/movie-explorer.git
+Cloning into 'movie-explorer'...
+remote: Enumerating objects: 9, done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
+Unpacking objects: 100% (9/9), done.
+Checking connectivity... done.
 {% endhighlight %}
+
+Parfait ! Cette simple commande nous a permis de télécharger l'appli sur le serveur.
+
+Sauf que Shiny s'attend à ce que l'appli se trouve dans le dossier bien spécial `/srv/shiny-server/`. Donc on va créer un raccourci là-bas :
+
+{% highlight shell %}
+$ cd /srv/shiny-server
+$ sudo ln -s ~/movie-explorer .
+{% endhighlight %}
+
+À présent, si on affiche la liste des fichiers, on va voir que notre raccourci a bien été créé :
+
+{% highlight shell %}
+$ ls
+index.html  movie-explorer  sample-apps
+{% endhighlight %}
+
+D'ailleurs, au passage, je vous propose de supprimer l'appli installée par défaut :
+
+{% highlight shell %}
+$ sudo rm index.html
+$ sudo rm -R sample-apps
+{% endhighlight %}
+
+Eh bien ça y est !
+
+On a ajouté notre application dans le bon dossier, à présent elle devrait être accessible sur les internets.
+
+Testons !
+
+Si je tape `3.121.42.9:3838` dans la barre de mon navigateur, je tombe sur...
+
+![Root folder]({{ "/assets/images/shiny-server-aws-part4/root.png" | absolute_url }}){: .align-center}
+
+Oops, pas très joli ça. On va voir après comment le changer.
+
+Cliquons sur le lien, et...
+
+`ERROR: An error has occurred. Check your logs or contact the app author for clarification.`
+
+Eh :(
+
+...
+
+Bon.
+
+Il semblerait que le serveur reconnaisse bien qu'on a ajouté notre application, mais elle ne marche pas !
+
+Pourquoi ?
+
+## Comment configurer le Shiny Server ?
+
+Il va falloir changer un petit peu la config.
+
+Le fichier de configuration de Shiny Server se trouve dans `/etc/shiny-server/shiny-server.conf`. 
+
+On va l'ouvrir et essayer de comprendre :
+
+{% highlight shell %}
+sudo nano /etc/shiny-server/shiny-server.conf
+{% endhighlight %}
+
+Le fichier ressemble à ça :
+
+	# Instruct Shiny Server to run applications as the user "shiny"
+	run_as shiny;
+
+	# Define a server that listens on port 3838
+	server {
+	  listen 3838;
+
+	  # Define a location at the base URL
+	  location / {
+
+	    # Host the directory of Shiny Apps stored in this directory
+	    site_dir /srv/shiny-server;
+
+	    # Log all Shiny output to files in this directory
+	    log_dir /var/log/shiny-server;
+
+	    # When a user visits the base URL rather than a particular application,
+	    # an index of the applications available in this directory will be shown.
+	    directory_index on;
+	  }
+	}
+
+Je vais vous expliquer ligne par ligne comment le comprendre.
+
+
+
+
+	J'explique d'abord où se trouve l'application par défaut.
+	Je montre le fichier de configuration.
+	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
+	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.

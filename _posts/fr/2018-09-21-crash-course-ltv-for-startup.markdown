@@ -3,6 +3,7 @@ layout: single
 permalink: /fr/comment-predire-ltv-pour-startup-saas/
 title: "Startup SaaS : Comment prédire la LTV d'un nouvel utilisateur ?"
 description: "Si vous avez un produit SaaS, vous vous êtes forcément posé la question : Comment connaître la valeur d'un utilisateur ? Comment prédire son churn rate ? Dans cet article, j'explique comment un statisticien peut répondre à ces questions pour vous."
+excerpt: "Si vous avez un produit SaaS, vous vous êtes forcément déjà posé la question : Comment connaître la valeur d'un nouvel utilisateur ? Comment prédire son churn rate ? Dans cet article, j'explique comment un statisticien peut répondre à ces questions pour vous."
 date: 2018-09-21
 lang: fr
 categories: [statistics, fr]

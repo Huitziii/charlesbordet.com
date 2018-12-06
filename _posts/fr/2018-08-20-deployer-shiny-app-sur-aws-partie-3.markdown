@@ -3,6 +3,7 @@ layout: single
 permalink: /fr/shiny-aws-3/
 title: "Déployer Shiny sur AWS - Installer R et R Shiny sur le serveur"
 description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 3 : Après avoir créé notre serveur, on y installe à présent R et R Shiny !"
+excerpt: "Dans cette 3e partie de la série 'Comment déployer une application Shiny sur AWS', on va entrer au cœur de notre serveur pour y installer R, R Shiny, et mettre en place Shiny Server !"
 date: 2018-08-20
 lang: fr
 categories: [shiny, fr]
