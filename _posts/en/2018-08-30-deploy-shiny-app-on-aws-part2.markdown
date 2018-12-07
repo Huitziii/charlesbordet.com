@@ -3,6 +3,7 @@ layout: single
 permalink: /en/shiny-aws-2/
 title: "Deploy Shiny on AWS - Create a server"
 description: "Learn how to deploy a Shiny app on an AWS server. It's simple, free, and fully explained in this article! Part 2: We explore AWS, its possibilites, and how to create our first server!"
+excerpt: "We continue the series 'How to deploy a Shiny app on AWS' with a 2nd article. This time, we'll get our hands dirty through the introduction to AWS and the creation of our first server!"
 date: 2018-08-30
 lang: en
 categories: [shiny, en]

@@ -3,6 +3,7 @@ layout: single
 permalink: /fr/shiny-aws-1/
 title: "Déployer Shiny sur AWS - Créer l'application Shiny"
 description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 1 : Pour se préparer, on crée une appli Shiny toute simple prête à être déployer."
+excerpt: "Cet article fait partie de la série 'Comment déployer une application Shiny sur AWS'. Dans cette première partie, on se prépare en créant une appli Shiny toute simple prête à être déployer !"
 date: 2018-07-14
 lang: fr
 categories: [shiny, fr]
