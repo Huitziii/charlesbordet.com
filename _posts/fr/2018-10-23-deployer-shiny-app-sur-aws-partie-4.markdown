@@ -4,7 +4,7 @@ permalink: /fr/shiny-aws-4/
 title: "Déployer Shiny sur AWS - Comment envoyer l'application sur votre serveur ?"
 description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 4 : Après avoir créé le serveur et installé Shiny Server, on déploie l'application et on la rend accessible à tous !"
 excerpt: "On poursuit la série sur 'Comment déployer une application Shiny sur AWS' avec ce 4e et dernier article où enfin, vous allez voir votre application apparaître sur les internets !"
-date: 2018-12-01
+date: 2018-12-14
 lang: fr
 categories: [shiny, fr]
 ref: shiny-server-aws-part4
