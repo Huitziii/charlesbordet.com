@@ -4,12 +4,13 @@ permalink: /fr/shiny-aws-4/
 title: "Déployer Shiny sur AWS - Comment envoyer l'application sur votre serveur ?"
 description: "Apprenez à déployer par vous-même une application Shiny sur un serveur AWS. C'est simple, gratuit, et expliqué dans cet article ! Partie 4 : Après avoir créé le serveur et installé Shiny Server, on déploie l'application et on la rend accessible à tous !"
 excerpt: "On poursuit la série sur 'Comment déployer une application Shiny sur AWS' avec ce 4e et dernier article où enfin, vous allez voir votre application apparaître sur les internets !"
-date: 2018-12-14
+date: 2018-12-08
 lang: fr
 categories: [shiny, fr]
 ref: shiny-server-aws-part4
 header:
     image: /assets/images/shiny-server-aws-part4/featured.jpg
+toc: true
 ---
 
 {% include tableofcontents/shiny-server-aws-fr.markdown %}
@@ -22,7 +23,7 @@ D'abord, on a créé une application Shiny et on l'a envoyée sur Github. Ensuit
 
 En effet, elle est apparue en installant R Shiny.
 
-## Comment accéder à l'application Shiny installée par défaut ?
+## 1. Comment accéder à l'application Shiny installée par défaut ?
 
 Pour y accéder, deux étapes :
 
@@ -95,7 +96,7 @@ D'ailleurs, vous noterez peut-être un message d'erreur dans un des widgets : "A
 
 Ça c'est chouette mais.. le but c'est de mettre notre application maintenant !
 
-## Comment ajouter votre application sur votre serveur ?
+## 2. Comment ajouter votre application sur votre serveur ?
 
 Pour ça, on va devoir retourner dans la console sur notre serveur.
 
@@ -206,7 +207,7 @@ Il semblerait que le serveur reconnaisse bien qu'on a ajouté notre application,
 
 Pourquoi ?
 
-## Comment configurer le Shiny Server ?
+## 3. Comment configurer le Shiny Server ?
 
 Il va falloir changer un petit peu la config.
 
@@ -244,7 +245,77 @@ Le fichier ressemble à ça :
 
 Je vais vous expliquer ligne par ligne comment le comprendre.
 
+* La première ligne `run_as shiny` indique l'utilisateur Ubuntu qui est derrière le Shiny Server. Quand vous vous connectez au serveur via SSH, vous dirigez l'utilisateur `ubuntu`, celui par défaut. Quand on a installé Shiny Server, il a créé un nouvel utilisateur, qui s'appelle `shiny`, qui est celui qui va faire tourner le serveur. C'est important pour la suite.
+* Ensuite, on a `listen 3838`, ça veut dire qu'il faut spécifier le port 3838 pour accéder à l'appli. C'est justement ce qu'on a fait quand on a tapé l'adresse dans notre navigateur.
+* La ligne `site_dir /srv/shiny-server` indique l'endroit où se trouve les applis Shiny. Et effectivement, c'est là qu'on a placé la notre. En tout cas, on y a mis un raccourci.
+* Finalement, `log_dir /var/log/shiny-server` spécifie l'endroit où se trouve les logs. Ça c'est super utile, puisque ça va nous permettre de comprendre pourquoi notre appli a planté. On va aller les voir juste après.
+* La dernière ligne, `directory_index on`, comme le commentaire l'indique, permettre de montrer l'arborescence des dossiers à la racine. C'est ce qu'on voit quand je vais directement sur `3.121.42.9:3838`. Moi je trouve ça un peu moche, du coup j'ai tendance à le désactiver : `directory_index off`. En plus, c'est mieux si on préfère ne pas montrer toutes les applis dont on dispose.
 
+Outre cette modification optionnelle pour la dernière ligne, je vous invite à rajouter une ligne tout en haut du fichier de config : `preserve_logs true;`.
+
+Cette ligne permet de garder les logs en toute circonstance.
+
+En effet, Shiny a la mauvaise habitude de supprimer les logs quand il considère qu'il ne s'est rien passé d'intéressant. Et parfois, notre appli bug, on veut voir les logs... et ils ne sont pas là ! Cette ligne permet d'éviter ce problème.
+
+**Important** : Lorsque vous changez la config, il faut recharger le Shiny Server avec la commande suivante afin que les changements soient pris en compte :
+
+{% highlight shell %}
+$ sudo systemctl reload shiny-server
+{% endhighlight %}
+
+D'ailleurs, en parlant de logs... allons voir pourquoi notre appli plante !
+
+## 4. Comment débugger une appli Shiny à partir des logs
+
+Pour aller voir les logs :
+
+{% highlight shell %}
+$ cd /var/log/shiny-server
+$ ls
+movie-explorer-shiny-20181210-080534-46879.log rmd-shiny-20181023-144836-40079.log
+{% endhighlight %}
+
+Je vois deux fichiers dans la liste. 
+
+Celui nommé `movie-explorer` correspond à notre application. L'autre est l'application de base par défaut.
+
+Les chiffres dans les noms des fichiers correspondent à la date. Donc le premier fichier a été créé le 2018-12-10 à 08:05:34. Quand les fichiers de logs commencent à s'accumuler, c'est pratique pour s'y retrouver.
+
+Si jamais vous ne voyez pas de fichier, essayez de relancer l'application. C'est le problème des logs qui disparaissent que je mentionnais juste avant. Mais il sera résolu avec la nouvelle config.
+
+J'affiche les dernières lignes du fichier de log et je vois :
+
+{% highlight shell %}
+$ sudo tail movie-explorer-shiny-20181210-080534-46879.log
+Warning message:
+replacing previous import by ‘Rcpp::evalCpp’ when loading ‘later’ 
+
+Listening on http://127.0.0.1:44533
+Warning: Error in library: there is no package called ‘ggvis’
+  48: stop
+  47: library
+
+
+Execution halted
+{% endhighlight %}
+
+Mais oui !
+
+On n'a pas installé les libraries nécessaires pour le fonctionnement de l'appli.
+
+C'est évident maintenant qu'on le voit.
+
+Mais dites-vous que c'est une source d'erreur très fréquente. On rajoute une librairie dans une appli, tout roule bien en local, on met à jour, et là... ça plante, on comprend plus pourquoi. Juste parce qu'on n'a pas pensé à installer le package sur le serveur.
+
+**Attention** : Comme le Shiny Server est géré par l'utilisateur `shiny`, il faut installer les packages soit avec l'utilisateur `shiny`, soit avec le superuser. Je vous conseille plutôt de le faire avec l'utilisateur `shiny`, de cette façon :
+
+{% highlight shell %}
+$ sudo su - shiny
+$ R
+> install.packages("ggvis")
+{% endhighlight %}
+
+Il va vous demander si vous voulez utiliser une bibliothèque locale, répondez que oui.
 
 
 	J'explique d'abord où se trouve l'application par défaut.
