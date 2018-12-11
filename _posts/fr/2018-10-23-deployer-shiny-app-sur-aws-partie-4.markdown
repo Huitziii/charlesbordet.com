@@ -11,6 +11,7 @@ ref: shiny-server-aws-part4
 header:
     image: /assets/images/shiny-server-aws-part4/featured.jpg
 toc: true
+toc_sticky: true
 ---
 
 {% include tableofcontents/shiny-server-aws-fr.markdown %}
@@ -317,8 +318,60 @@ $ R
 
 Il va vous demander si vous voulez utiliser une bibliothèque locale, répondez que oui.
 
+Une fois le package installé, ré-essayez de charger l'application. 
 
-	J'explique d'abord où se trouve l'application par défaut.
-	Je montre le fichier de configuration.
-	Je montre comment télécharger l'application sur le serveur dans le dossier qu'on veut.
-	Je montre comment télécharger les packages nécessaires pour l'utilisateur shiny.
+Cette fois-ci, vous allez voir l'appli apparaître, et très rapidement crash (elle devient grisée).
+
+<a href="{{ "/assets/images/shiny-server-aws-part4/movie_explorer_crash.png" | absolute_url }}"><img src="{{ "/assets/images/shiny-server-aws-part4/movie_explorer_crash.png" | absolute_url }}" width="50%" class="align-center"></a>
+
+Encore raté !
+
+Si on retourne rapidement dans les logs, on s'aperçoit qu'un nouveau fichier s'est créé, et il nous indique :
+
+{% highlight shell %}
+$ sudo tail movie-explorer-shiny-20181211-083747-41773.log
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning: Error in : The dbplyr package is required to communicate with database backends.
+  56: <Anonymous>
+Error : The dbplyr package is required to communicate with database backends.
+
+
+Execution halted
+{% endhighlight %}
+
+Il manque un autre package ! `dbplyr`.
+
+**Note**: Après avoir installé le package pour l'utilisateur `shiny`, n'oubliez pas de revenir à l'utilisateur principal `ubuntu` en tapant `exit` dans la console.
+{: .notice--warning}
+
+Je vous laisse installer le package, vous savez comment faire, à présent. Bon, et puis autant vous le dire tout de suite, il faut aussi installer `RSQLite`
+
+Une fois installés...
+
+<a href="{{ "/assets/images/shiny-server-aws-part4/movie_explorer_final.png" | absolute_url }}"><img src="{{ "/assets/images/shiny-server-aws-part4/movie_explorer_final.png" | absolute_url }}" width="50%" class="align-center"></a>
+
+Finalement !
+
+On y arrive.
+
+Après avoir :
+
+* Créé votre serveur sur AWS
+* Installé R et R Shiny dessus
+* Envoyé votre application sur le serveur
+* Débuggé l'appli à partir des logs
+* Et configuré le serveur...
+
+Enfin on peut jouer avec notre appli à partir de n'importe où dans le monde ! Et surtout, on peut la partager à d'autres.
+
+Par contre, vous avez peut-être encore quelques questions, comme...
+
+* Comment se débarrasser de cette adresse IP moche et la remplacer par www.mabelleurl.fr ?
+* Comment restreindre l'accès à l'application avec un mot de passe ?
+* Comment sécuriser l'application en HTTPS ?
+* Ou encore, une fois que vous avez une bonne application qui tourne, comment améliorer la performance pour que des dizaines, voire des centaines d'utilisateurs, puissent y accéder simultanément ?
+
+C'est ce que nous verrons dans les prochains articles...

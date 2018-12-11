@@ -7,13 +7,12 @@
         {% else %}
           <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         {% endif %}
-        <ul class="visible-links">
 
-          
+        <!-- CHANGE LANGUAGE -->
           {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
           {% for post in posts %}
           <li class="masthead__menu-item">
-            <a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ '/assets/images/flag_' | append: post.lang | append: '.png' | absolute_url }}" /></a>
+            <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
           </li>
           {% endfor %}
           
@@ -23,7 +22,7 @@
             {% for page in pages %}
               {% if page.autogen == nil %}
                 <li class="masthead__menu-item">
-                  <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
+                  <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
                 </li>
               {% endif %}
             {% endfor %}
@@ -31,11 +30,13 @@
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
             {% for page in pages %}
             <li class="masthead__menu-item">
-              <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ '/assets/images/flag_' | append: page.lang | append: '.png' | absolute_url }}" /></a>
+              <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
             </li>
             {% endfor %}
           {% endif %}
-          
+          <!-- CHANGE LANGUAGE -->
+
+        <ul class="visible-links">
           {% assign links=site.data.navigation.main | where:"lang", page.lang %}
           {% for link in links %}
             {% if link.url contains 'http' %}

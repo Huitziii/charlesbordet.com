@@ -105,7 +105,7 @@ Une fois ces commandes lancées, le repo du CRAN est ajouté. On peut alors inst
 
 {% highlight shell %}
 $ sudo apt update
-$ sudo apt install r-base-dev
+$ sudo apt install r-base r-base-dev
 {% endhighlight %}
 
 Une fois R installé, et en préambule à l'installation de Shiny Server, il va falloir installer le package *shiny*.
